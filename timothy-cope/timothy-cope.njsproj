@@ -37,6 +37,7 @@
     <Content Include="package.json" />
     <Content Include="public\css\album.css" />
     <Content Include="public\img\bitbucket.png" />
+    <Content Include="public\img\c-sharp-appium.png" />
     <Content Include="public\img\c-sharp-selenium.png" />
     <Content Include="public\img\c-sharp-xamarin-osx.png" />
     <Content Include="public\img\c-sharp-xamarin.png" />

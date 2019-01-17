@@ -29,17 +29,17 @@
   },
   {
     "thumbnail": "sdetqa-framework-c-sharp.png",
-    "title": "sdetqa-framework-c-sharp",
+    "title": "SdetQa Framework",
     "url": "https://github.com/kirbycope/sdetqa-framework-c-sharp",
-    "text": "A C# (Appium, Selenium, and NUnit) Automated Testing Framework.",
+    "text": "An API, Mobile, & Web Automated Testing Framework.",
     "small": "C#, Appium, Selenium"
   },
   {
-    "thumbnail": "",
-    "title": "c-sharp-appium",
+    "thumbnail": "c-sharp-appium.png",
+    "title": "C# Appium",
     "url": "https://github.com/kirbycope/c-sharp-appium",
     "text": "A C# Appium and NUnit3 Framework for Windows (works with Sauce Labs TestObject).",
-    "small": ""
+    "small": "C#, Appium"
   },
   {
     "thumbnail": "watt-ide-javafx.png",

@@ -1,0 +1,142 @@
+[
+  {
+    "thumbnail": "timothycope.png",
+    "title": "TimothyCope.com",
+    "url": "http://timothycope.com",
+    "text": "Quality Assurance Testing, Training, and Consulting Services.",
+    "small": "WordPress"
+  },
+  {
+    "thumbnail": "testparser.png",
+    "title": "TestParser.com",
+    "url": "https://testparser.com/",
+    "text": "A free, cloud-based test logging and parsing service.",
+    "small": "NodeJS"
+  },
+  {
+    "thumbnail": "sdetqa.png",
+    "title": "SdetQa.com",
+    "url": "http://sdetqa.com",
+    "text": "Offers free, online SDET and QA training materials and tools.",
+    "small": "NodeJS"
+  },
+  {
+    "thumbnail": "starz-lite.png",
+    "title": "Starz Lite",
+    "url": "https://bitbucket.org/timothy_cope/starz-lite",
+    "text": "A lite version of Starz.com.",
+    "small": "Angular"
+  },
+  {
+    "thumbnail": "sdetqa-framework-c-sharp.png",
+    "title": "sdetqa-framework-c-sharp",
+    "url": "https://github.com/kirbycope/sdetqa-framework-c-sharp",
+    "text": "A C# (Appium, Selenium, and NUnit) Automated Testing Framework.",
+    "small": "C#, Appium, Selenium"
+  },
+  {
+    "thumbnail": "",
+    "title": "c-sharp-appium",
+    "url": "https://github.com/kirbycope/c-sharp-appium",
+    "text": "A C# Appium and NUnit3 Framework for Windows (works with Sauce Labs TestObject).",
+    "small": ""
+  },
+  {
+    "thumbnail": "watt-ide-javafx.png",
+    "title": "WATT (IDE)",
+    "url": "https://github.com/kirbycope/watt-ide-javafx",
+    "text": "Web Automation Testing Tool Interactive Development Enviroment.",
+    "small": "JavaFX"
+  },
+  {
+    "thumbnail": "c-sharp-xamarin.png",
+    "title": "C# Xamarin (Windows)",
+    "url": "https://github.com/kirbycope/c-sharp-xamarin",
+    "text": "A C# Xamarin and NUnit3 Framework for Windows (works with Xamarin Test Cloud).",
+    "small": "C# Xamarin"
+  },
+  {
+    "thumbnail": "c-sharp-xamarin-osx.png",
+    "title": "C# Xamarin (OSX)",
+    "url": "https://github.com/kirbycope/c-sharp-xamarin-osx",
+    "text": "A C# Xamarin and NUnit3 Framework for Mac (works with Xamarin Test Cloud).",
+    "small": "C#, Xamarin"
+  },
+  {
+    "thumbnail": "java-appium.png",
+    "title": "Java Appium",
+    "url": "https://github.com/kirbycope/java-appium",
+    "text": "A Java Appium and TestNG Framework (works with Amazon Device Farm).",
+    "small": "Java, Appium"
+  },
+  {
+    "thumbnail": "c-sharp-selenium.png",
+    "title": "C# Selenium",
+    "url": "https://github.com/kirbycope/c-sharp-selenium",
+    "text": "A C# Selenium and NUnit3 Framework.",
+    "small": "C#, Selenium"
+  },
+  {
+    "thumbnail": "watt-javafx.png",
+    "title": "WATT (JavaFX)",
+    "url": "https://github.com/kirbycope/watt-javafx",
+    "text": "Web Automation Testing Tool.",
+    "small": "JavaFX"
+  },
+  {
+    "thumbnail": "java-selenium.png",
+    "title": "Java Selenium",
+    "url": "https://github.com/kirbycope/java-selenium",
+    "text": "A Java Selenium and JUnit4 Framework.",
+    "small": "Java, Selenium"
+  },
+  {
+    "thumbnail": "powershell-api-tester.png",
+    "title": "PowerShell API Tester",
+    "url": "https://github.com/kirbycope/powershell-api-tester",
+    "text": "Perform Automated API tests using PowerShell.",
+    "small": "PowerShell"
+  },
+  {
+    "thumbnail": "",
+    "title": "JIRA App",
+    "url": "https://github.com/kirbycope/jira-app",
+    "text": "An example on getting started with the JIRA API and Google Chrome Apps",
+    "small": ""
+  },
+  {
+    "thumbnail": "watt-app.png",
+    "title": "WATT (App)",
+    "url": "https://github.com/kirbycope/watt-app",
+    "text": "Web Automation Testing Tool.",
+    "small": "JavaScript"
+  },
+  {
+    "thumbnail": "",
+    "title": "Connific",
+    "url": "https://bitbucket.org/timothy_cope/connific-android",
+    "text": "A social networking platform for Android.",
+    "small": "Java, Android"
+  },
+  {
+    "thumbnail": "",
+    "title": "FreeRein",
+    "url": "https://github.com/kirbycope/FreeRein",
+    "text": "A choose your own adventure game written by the internet.",
+    "small": "C#, MVC"
+  },
+  {
+    "thumbnail": "",
+    "title": "SeleniumClassLibrary",
+    "url": "https://github.com/kirbycope/SeleniumClassLibrary",
+    "text": "An example of Selenium WebDriver, NUnit, and Visual Studio",
+    "small": "C#, Selenium"
+  },
+  {
+    "thumbnail": "restful.png",
+    "title": "RESTful",
+    "url": "https://github.com/kirbycope/RESTful",
+    "text": "A WPF test client for RESTful APIs.",
+    "small": "C#, WPF"
+  }
+]

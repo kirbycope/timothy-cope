@@ -31,24 +31,42 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\js\index.js" />
     <Compile Include="routes\index.js" />
+    <Content Include="data\projects.json" />
     <Content Include="package.json" />
     <Content Include="public\css\album.css" />
     <Content Include="public\img\bitbucket.png" />
+    <Content Include="public\img\c-sharp-selenium.png" />
+    <Content Include="public\img\c-sharp-xamarin-osx.png" />
+    <Content Include="public\img\c-sharp-xamarin.png" />
     <Content Include="public\img\github.png" />
+    <Content Include="public\img\java-appium.png" />
+    <Content Include="public\img\java-selenium.png" />
+    <Content Include="public\img\powershell-api-tester.png" />
+    <Content Include="public\img\restful.png" />
+    <Content Include="public\img\sdetqa-framework-c-sharp.png" />
     <Content Include="public\img\sdetqa.png" />
     <Content Include="public\img\stackexchange.png" />
+    <Content Include="public\img\starz-lite.png" />
     <Content Include="public\img\testparser.png" />
     <Content Include="public\img\timothycope.png" />
+    <Content Include="public\img\watt-app.png" />
+    <Content Include="public\img\watt-extension.png" />
+    <Content Include="public\img\watt-javafx.png" />
     <Content Include="views\index.ejs" />
     <Content Include="views\error.ejs" />
+    <Content Include="views\partials\footer.ejs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\img\" />
+    <Folder Include="public\js\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

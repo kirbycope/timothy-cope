@@ -5,10 +5,12 @@ var router = express.Router();
 
 // Home page
 router.get('/', function (req, res) {
+    var projectJSON = require('../data/projects.json');
     res.render('index', {
         static_path: 'public',
         theme: process.env.THEME || 'default',
-        flask_debug: process.env.FLASK_DEBUG || 'false'
+        flask_debug: process.env.FLASK_DEBUG || 'false',
+        data: projectJSON
     });
 });
 

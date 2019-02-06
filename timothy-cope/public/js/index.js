@@ -13,12 +13,17 @@ function populateProjects() {
             projectCard.classList.add("shadow-sm");
             cardContainer.appendChild(projectCard);
 
-                // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
-                var cardImageTop = document.createElement("img");
-                cardImageTop.classList.add("card-img-top");
-                cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
-                cardImageTop.setAttribute("src", "/public/img/" + data[i].thumbnail);
-                projectCard.appendChild(cardImageTop);
+                // <a>
+                var cardImageLink = document.createElement("a");
+                cardImageLink.href = data[i].url;
+                projectCard.appendChild(cardImageLink);
+
+                    // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
+                    var cardImageTop = document.createElement("img");
+                    cardImageTop.classList.add("card-img-top");
+                    cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
+                    cardImageTop.setAttribute("src", "/public/img/" + data[i].thumbnail);
+                    cardImageLink.appendChild(cardImageTop);
 
                 // <div class="card-body">
                 var cardBody = document.createElement("div");

@@ -24,7 +24,7 @@
     "thumbnail": "starz-lite.png",
     "title": "Starz Lite",
     "url": "https://bitbucket.org/timothy_cope/starz-lite",
-    "text": "A lite version of Starz.com.",
+    "text": "A lite version of Starz.com (no video playback).",
     "small": "Angular"
   },
   {
@@ -32,20 +32,20 @@
     "title": "SdetQa Framework",
     "url": "https://github.com/kirbycope/sdetqa-framework-c-sharp",
     "text": "An API, Mobile, & Web Automated Testing Framework.",
-    "small": "C#, Appium, Selenium"
+    "small": "C#, NUnit"
   },
   {
     "thumbnail": "c-sharp-appium.png",
     "title": "C# Appium",
     "url": "https://github.com/kirbycope/c-sharp-appium",
-    "text": "A C# Appium and NUnit3 Framework for Windows (works with Sauce Labs TestObject).",
+    "text": "A test framework for Windows (works with Sauce Labs TestObject).",
     "small": "C#, Appium"
   },
   {
     "thumbnail": "watt-ide-javafx.png",
     "title": "WATT (IDE)",
     "url": "https://github.com/kirbycope/watt-ide-javafx",
-    "text": "Web Automation Testing Tool Interactive Development Enviroment.",
+    "text": "Web Automation Testing Tool interactive development enviroment.",
     "small": "JavaFX"
   },
   {
@@ -53,7 +53,7 @@
     "title": "C# Xamarin (Windows)",
     "url": "https://github.com/kirbycope/c-sharp-xamarin",
     "text": "A C# Xamarin and NUnit3 Framework for Windows (works with Xamarin Test Cloud).",
-    "small": "C# Xamarin"
+    "small": "C#, Xamarin"
   },
   {
     "thumbnail": "c-sharp-xamarin-osx.png",
@@ -66,7 +66,7 @@
     "thumbnail": "java-appium.png",
     "title": "Java Appium",
     "url": "https://github.com/kirbycope/java-appium",
-    "text": "A Java Appium and TestNG Framework (works with Amazon Device Farm).",
+    "text": "A test framework (works with Amazon Device Farm).",
     "small": "Java, Appium"
   },
   {
@@ -78,7 +78,7 @@
   },
   {
     "thumbnail": "watt-javafx.png",
-    "title": "WATT (JavaFX)",
+    "title": "WATT Stand-alone",
     "url": "https://github.com/kirbycope/watt-javafx",
     "text": "Web Automation Testing Tool.",
     "small": "JavaFX"
@@ -98,38 +98,38 @@
     "small": "PowerShell"
   },
   {
-    "thumbnail": "",
-    "title": "JIRA App",
+    "thumbnail": "jira-app.png",
+    "title": "JIRA Chrome App",
     "url": "https://github.com/kirbycope/jira-app",
-    "text": "An example on getting started with the JIRA API and Google Chrome Apps",
-    "small": ""
+    "text": "Use the JIRA API with Google Chrome Apps.",
+    "small": "JavaScript"
   },
   {
     "thumbnail": "watt-app.png",
-    "title": "WATT (App)",
+    "title": "WATT Chrome App",
     "url": "https://github.com/kirbycope/watt-app",
     "text": "Web Automation Testing Tool.",
     "small": "JavaScript"
   },
   {
-    "thumbnail": "",
+    "thumbnail": "connific.png",
     "title": "Connific",
     "url": "https://bitbucket.org/timothy_cope/connific-android",
     "text": "A social networking platform for Android.",
     "small": "Java, Android"
   },
   {
-    "thumbnail": "",
+    "thumbnail": "freerein.png",
     "title": "FreeRein",
     "url": "https://github.com/kirbycope/FreeRein",
-    "text": "A choose your own adventure game written by the internet.",
+    "text": "A choose your own adventure game.",
     "small": "C#, MVC"
   },
   {
-    "thumbnail": "",
-    "title": "SeleniumClassLibrary",
+    "thumbnail": "selenium-class-library.png",
+    "title": "Selenium Class Library",
     "url": "https://github.com/kirbycope/SeleniumClassLibrary",
-    "text": "An example of Selenium WebDriver, NUnit, and Visual Studio",
+    "text": "An example of a basic selenium library.",
     "small": "C#, Selenium"
   },
   {

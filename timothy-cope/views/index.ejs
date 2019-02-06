@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Software Development and Quality Assurance - Tap into years of experience to expand your company's capabilities in today's fast moving markets.">
+    <meta name="author" content="Timothy Cope">
 
-    <title>timothy-cope</title>
+    <title>Timothy Cope</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -17,49 +17,12 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <%- include ./partials/header.ejs %>
 
-    <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-
-                    <!-- About -->
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">About</h4>
-                        <p class="text-muted">
-                            Tim Cope ensures that quality standards are met during production. Using a developer mindset he performs Happy Path, Negative, Fuzz, Security, Conformance, and Accessibility testing. He also wears an End-User hat to perform Usability testing.
-                            <br> Tim is backed by years of hardware and software quality assurance as well as an education in Computer Science. His experience spans a multitude of environments and programming languages. This allows him to not only test, but to also automate tests and deployments.
-                        </p>
-                    </div>
-
-                    <!-- Contact -->
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contact</h4>
-                        <ul class="list-unstyled navbar-dark">
-                            <li style="color: #fff;"><a href="//github.com/kirbycope" class="d-flex align-items-center navbar-brand text-white"><i data-feather="github" style="margin-right:.25rem;"></i>Follow on GitHub</a></li>
-                            <li style="color: #fff;"><a href="//www.linkedin.com/pub/timothy-cope/5a/10b/901" class="d-flex align-items-center navbar-brand text-white"><i data-feather="linkedin" style="margin-right:.25rem;"></i>Connect on LinkedIn</a></li>
-                            <li style="color: #fff;"><a href="mailto:inquiries@timothycope.com" class="d-flex align-items-center navbar-brand text-white"><i data-feather="mail" style="margin-right:.25rem;"></i>Email Tim</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <i data-feather="life-buoy" style="margin-right:.25rem;"></i>
-                    <strong>Timothy Cope</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
+    <!-- Body-->
     <main role="main">
-
+        <!-- Call To Action -->
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Experience Summary</h1>
@@ -73,7 +36,7 @@
                 </p>
             </div>
         </section>
-
+        <!-- Project Cards -->
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row" id="projects">
@@ -82,10 +45,13 @@
         </div>
 
     </main>
+
     <!-- Set JS variable based on data from Router -->
     <script>
         var data = <%- JSON.stringify(data) %>;
     </script>
+
+    <!-- Footer -->
     <%- include ./partials/footer.ejs %>
 </body>
 

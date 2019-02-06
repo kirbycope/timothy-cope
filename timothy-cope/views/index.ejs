@@ -1,26 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Software Development and Quality Assurance - Tap into years of experience to expand your company's capabilities in today's fast moving markets.">
-    <meta name="author" content="Timothy Cope">
-
-    <title>Timothy Cope</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="/public/css/album.css" rel="stylesheet">
-</head>
-
+<%- include ./partials/head.ejs %>
 <body>
     <!-- Header -->
     <%- include ./partials/header.ejs %>
-
-    <!-- Body-->
+    <!-- Main -->
     <main role="main">
         <!-- Call To Action -->
         <section class="jumbotron text-center">
@@ -43,16 +27,8 @@
                 </div>
             </div>
         </div>
-
     </main>
-
-    <!-- Set JS variable based on data from Router -->
-    <script>
-        var data = <%- JSON.stringify(data) %>;
-    </script>
-
     <!-- Footer -->
     <%- include ./partials/footer.ejs %>
 </body>
-
 </html>

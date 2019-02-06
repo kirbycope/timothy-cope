@@ -44,12 +44,13 @@
     <Content Include="public\img\c-sharp-xamarin-osx.png" />
     <Content Include="public\img\c-sharp-xamarin.png" />
     <Content Include="public\img\connific.png" />
-    <Content Include="public\img\freerein.png.png" />
+    <Content Include="public\img\freerein.png" />
     <Content Include="public\img\github.png" />
     <Content Include="public\img\java-appium.png" />
     <Content Include="public\img\java-selenium.png" />
     <Content Include="public\img\jira-app.png" />
     <Content Include="public\img\powershell-api-tester.png" />
+    <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\restful.png" />
     <Content Include="public\img\sdetqa-framework-c-sharp.png" />
     <Content Include="public\img\sdetqa.png" />
@@ -65,6 +66,7 @@
     <Content Include="views\index.ejs" />
     <Content Include="views\error.ejs" />
     <Content Include="views\partials\footer.ejs" />
+    <Content Include="views\partials\head.ejs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />

@@ -112,6 +112,13 @@
     "small": "JavaScript"
   },
   {
+    "thumbnail": "watt-extension.png",
+    "title": "WATT Chrome Extension",
+    "url": "https://chrome.google.com/webstore/detail/watt-web-automation-testi/nmcniejodogmpahanknhomgalncgcndb",
+    "text": "Web Automation Testing Tool.",
+    "small": "JavaScript"
+  },
+  {
     "thumbnail": "connific.png",
     "title": "Connific",
     "url": "https://bitbucket.org/timothy_cope/connific-android",

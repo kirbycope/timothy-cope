@@ -30,11 +30,19 @@ function populateProjects() {
                 cardBody.classList.add("card-body");
                 projectCard.appendChild(cardBody);
 
-                    // <p class="card-title"></p>
-                    var cardTitle = document.createElement("p");
+                    // <h5 class="card-title"></p>
+                    var cardTitle = document.createElement("h5");
                     cardTitle.classList.add("card-title");
                     cardTitle.innerText = data[i].title;
                     cardBody.appendChild(cardTitle);
+
+                    // <h6 class="card-subtitle mb-2 text-muted">
+                    var cardSubTitle = document.createElement("h6");
+                    cardSubTitle.classList.add("card-subtitle");
+                    cardSubTitle.classList.add("mb-2");
+                    cardSubTitle.classList.add("text-muted");
+                    cardSubTitle.innerText = data[i].created;
+                    cardBody.appendChild(cardSubTitle);
 
                     // <p class="card-text"></p>
                     var cardText = document.createElement("p");

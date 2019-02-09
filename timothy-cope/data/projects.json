@@ -46,7 +46,7 @@
     "title": "WATT (IDE)",
     "url": "https://github.com/kirbycope/watt-ide-javafx",
     "text": "Web Automation Testing Tool interactive development enviroment.",
-    "small": "JavaFX"
+    "small": "Java, FX"
   },
   {
     "thumbnail": "c-sharp-xamarin.png",
@@ -81,7 +81,7 @@
     "title": "WATT Stand-alone",
     "url": "https://github.com/kirbycope/watt-javafx",
     "text": "Web Automation Testing Tool.",
-    "small": "JavaFX"
+    "small": "Java, FX"
   },
   {
     "thumbnail": "java-selenium.png",
@@ -126,6 +126,13 @@
     "small": "Java, Android"
   },
   {
+    "thumbnail": "automater.png",
+    "title": "AutoMater",
+    "url": "https://github.com/kirbycope/automater",
+    "text": "A Java app that performs quality checks.",
+    "small": "Java, Swing"
+  },
+  {
     "thumbnail": "freerein.png",
     "title": "FreeRein",
     "url": "https://github.com/kirbycope/FreeRein",
@@ -138,6 +145,13 @@
     "url": "https://github.com/kirbycope/SeleniumClassLibrary",
     "text": "An example of a basic selenium library.",
     "small": "C#, Selenium"
+  },
+  {
+    "thumbnail": "the-cosmics.png",
+    "title": "theCosmics",
+    "url": "https://github.com/kirbycope/the-cosmics",
+    "text": "An ASP.net MVC4 web application.",
+    "small": "C#, MVC"
   },
   {
     "thumbnail": "restful.png",

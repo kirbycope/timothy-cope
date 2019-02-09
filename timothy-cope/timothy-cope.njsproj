@@ -38,6 +38,7 @@
     <Content Include="package.json" />
     <Content Include="public\css\album.css" />
     <Content Include="public\favicon.ico" />
+    <Content Include="public\img\automater.png" />
     <Content Include="public\img\bitbucket.png" />
     <Content Include="public\img\c-sharp-appium.png" />
     <Content Include="public\img\c-sharp-selenium.png" />
@@ -58,6 +59,7 @@
     <Content Include="public\img\stackexchange.png" />
     <Content Include="public\img\starz-lite.png" />
     <Content Include="public\img\testparser.png" />
+    <Content Include="public\img\the-cosmics.png" />
     <Content Include="public\img\timothycope.png" />
     <Content Include="public\img\watt-app.png" />
     <Content Include="public\img\watt-extension.png" />

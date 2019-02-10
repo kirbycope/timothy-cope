@@ -58,8 +58,10 @@
     <Content Include="public\img\selenium-class-library.png" />
     <Content Include="public\img\stackexchange.png" />
     <Content Include="public\img\starz-lite.png" />
+    <Content Include="public\img\telerik-rest.png" />
     <Content Include="public\img\testparser.png" />
     <Content Include="public\img\the-cosmics.png" />
+    <Content Include="public\img\ti-calc.png" />
     <Content Include="public\img\timothycope.png" />
     <Content Include="public\img\watt-app.png" />
     <Content Include="public\img\watt-extension.png" />

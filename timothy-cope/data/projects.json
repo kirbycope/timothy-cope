@@ -136,6 +136,14 @@
     "small": "JavaScript"
   },
   {
+    "created": "May 2015",
+    "thumbnail": "qAspire.png",
+    "title": "qAspire",
+    "url": "https://github.com/kirbycope/qAspire",
+    "text": "A Selenium IDE-like standalone tool.",
+    "small": "Java, FX"
+  },
+  {
     "created": "Sep 2014",
     "thumbnail": "automater.png",
     "title": "AutoMater",
@@ -182,5 +190,21 @@
     "url": "https://github.com/kirbycope/the-cosmics",
     "text": "An ASP.net MVC4 web application.",
     "small": "C#, MVC"
+  },
+  {
+    "created": "Nov 2013",
+    "thumbnail": "telerik-rest.png",
+    "title": "Telerik API Testing",
+    "url": "https://www.telerik.com/support/code-library/testing-rest-api-using-test-studio",
+    "text": "Testing REST API Using Test Studio.",
+    "small": "C#, Telerik"
+  },
+  {
+    "created": "Jun 2001",
+    "thumbnail": "ti-calc.png",
+    "title": "TiCalc.Org Apps",
+    "url": "https://www.ticalc.org/archives/files/authors/52/5205.html",
+    "text": "Shipped with the TI Connectivity Kit.",
+    "small": "BASIC"
   }
 ]

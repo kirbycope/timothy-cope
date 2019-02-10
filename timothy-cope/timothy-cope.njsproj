@@ -52,6 +52,7 @@
     <Content Include="public\img\jira-app.png" />
     <Content Include="public\img\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
+    <Content Include="public\img\qaspire.png" />
     <Content Include="public\img\restful.png" />
     <Content Include="public\img\sdetqa-framework-c-sharp.png" />
     <Content Include="public\img\sdetqa.png" />

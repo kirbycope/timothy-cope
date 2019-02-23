@@ -15,11 +15,13 @@ function populateProjects() {
 
                 // <a>
                 var cardImageLink = document.createElement("a");
+                cardImageLink.title = "Link to site for " + data[i].title;
                 cardImageLink.href = data[i].url;
                 projectCard.appendChild(cardImageLink);
 
                     // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
                     var cardImageTop = document.createElement("img");
+                    cardImageTop.alt = "Screenshot of " + data[i].title;
                     cardImageTop.classList.add("card-img-top");
                     cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
                     cardImageTop.setAttribute("src", "/public/img/" + data[i].thumbnail);
@@ -64,6 +66,7 @@ function populateProjects() {
 
                             // <a href="#" class="btn btn-sm btn-outline-secondary" role="button"></a>
                             var cardLink = document.createElement("a");
+                            cardLink.title = "Link to site for " + data[i].title;
                             cardLink.classList.add("btn");
                             cardLink.classList.add("btn-sm");
                             cardLink.classList.add("btn-outline-secondary");

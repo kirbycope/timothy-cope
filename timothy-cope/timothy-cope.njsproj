@@ -37,6 +37,7 @@
     <Content Include="data\projects.json" />
     <Content Include="package.json" />
     <Content Include="public\css\album.css" />
+    <Content Include="public\css\bootstrap.min.css" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\img\automater.png" />
     <Content Include="public\img\bitbucket.png" />

@@ -105,7 +105,7 @@ function populateBlogPosts() {
         maxPosts = blogPosts.length;
     }
     for (var i = 0; i < maxPosts; i++) {
-        AddBlogPostToContainer("posts-container", blogPosts[i], true);
+        addBlogPostToContainer("posts-container", blogPosts[i], true);
     }
 }
 
@@ -116,6 +116,34 @@ function handlePagination() {
     }
 }
 
-populateFeaturedPosts();
-populateBlogPosts();
-handlePagination();
+function sortByDate(a, b) {
+    return new Date(a.date).getTime() - new Date(b.date).getTime();
+}
+
+var blogPosts;
+function getBlogPosts() {
+    var querystringFilter = document.location.search;
+    var month = querystringFilter.substring(querystringFilter.indexOf("?filter=") + 8, querystringFilter.indexOf("-")).toLowerCase();
+    var year = querystringFilter.substring(querystringFilter.indexOf("-") + 1, querystringFilter.length);
+    var xmlHttpRequest = new XMLHttpRequest();
+    xmlHttpRequest.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            blogPosts = JSON.parse(xmlHttpRequest.responseText);
+            blogPosts = blogPosts.sort(sortByDate);
+            blogPosts = blogPosts.reverse();
+            if (querystringFilter.length > 0) {
+                blogPosts = blogPosts.filter(function (key) { return key.date.toLowerCase().indexOf(month) !== -1; });
+                blogPosts = blogPosts.filter(function (key) { return key.date.indexOf(year) !== -1; });
+            }
+            if (blogPosts.length > 0) {
+                populateFeaturedPosts();
+                populateBlogPosts();
+            }
+            handlePagination();
+        }
+    };
+    xmlHttpRequest.open("GET", "/api/blog", true);
+    xmlHttpRequest.send();
+}
+
+getBlogPosts();

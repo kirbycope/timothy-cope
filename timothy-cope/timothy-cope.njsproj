@@ -37,11 +37,19 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="public\js\album.js" />
+    <Compile Include="public\js\signin.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\admin.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="routes\api\blog.js" />
+    <Compile Include="routes\blog.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\index.js" />
     <Compile Include="views\partials\header\album.ejs" />
-    <Content Include="data\blog.json">
-      <SubType>Code</SubType>
-    </Content>
+    <Content Include="config.json" />
     <Content Include="data\projects.json" />
     <Content Include="package.json" />
     <Content Include="public\css\album.css" />
@@ -52,43 +60,47 @@
     <Content Include="public\css\pricing.css">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="public\css\signin.css">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="public\favicon.ico" />
-    <Content Include="public\img\automater.png" />
-    <Content Include="public\img\bitbucket.png" />
-    <Content Include="public\img\c-sharp-appium.png" />
-    <Content Include="public\img\c-sharp-selenium.png" />
-    <Content Include="public\img\c-sharp-xamarin-osx.png" />
-    <Content Include="public\img\c-sharp-xamarin.png" />
-    <Content Include="public\img\connific.png" />
+    <Content Include="public\img\projects\automater.png" />
+    <Content Include="public\img\projects\c-sharp-appium.png" />
+    <Content Include="public\img\projects\c-sharp-selenium.png" />
+    <Content Include="public\img\projects\c-sharp-xamarin-osx.png" />
+    <Content Include="public\img\projects\c-sharp-xamarin.png" />
+    <Content Include="public\img\projects\connific.png" />
     <Content Include="public\img\dev.png" />
-    <Content Include="public\img\freerein.png" />
-    <Content Include="public\img\github.png" />
-    <Content Include="public\img\java-appium.png" />
-    <Content Include="public\img\java-selenium.png" />
-    <Content Include="public\img\jira-app.png" />
+    <Content Include="public\img\projects\freerein.png" />
+    <Content Include="public\img\projects\java-appium.png" />
+    <Content Include="public\img\projects\java-selenium.png" />
+    <Content Include="public\img\projects\jira-app.png" />
     <Content Include="public\img\kelly-sikkema-450720-unsplash.jpg" />
-    <Content Include="public\img\powershell-api-tester.png" />
+    <Content Include="public\img\projects\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\preview-blog.png" />
     <Content Include="public\img\qa.png" />
-    <Content Include="public\img\qAspire.png" />
-    <Content Include="public\img\restful.png" />
-    <Content Include="public\img\sdetqa-framework-c-sharp.png" />
-    <Content Include="public\img\sdetqa.png" />
-    <Content Include="public\img\selenium-class-library.png" />
-    <Content Include="public\img\stackexchange.png" />
-    <Content Include="public\img\starz-lite.png" />
-    <Content Include="public\img\telerik-rest.png" />
-    <Content Include="public\img\testparser.png" />
-    <Content Include="public\img\the-cosmics.png" />
-    <Content Include="public\img\ti-calc.png" />
+    <Content Include="public\img\projects\qAspire.png" />
+    <Content Include="public\img\projects\restful.png" />
+    <Content Include="public\img\projects\sdetqa-framework-c-sharp.png" />
+    <Content Include="public\img\projects\sdetqa.png" />
+    <Content Include="public\img\projects\selenium-class-library.png" />
+    <Content Include="public\img\projects\starz-lite.png" />
+    <Content Include="public\img\projects\telerik-rest.png" />
+    <Content Include="public\img\projects\testparser.png" />
+    <Content Include="public\img\projects\the-cosmics.png" />
+    <Content Include="public\img\projects\ti-calc.png" />
+    <Content Include="public\img\timothy-cope-logo-98px.png" />
     <Content Include="public\img\timothy-cope.jpg" />
-    <Content Include="public\img\timothycope.png" />
-    <Content Include="public\img\watt-app.png" />
-    <Content Include="public\img\watt-extension.png" />
-    <Content Include="public\img\watt-ide-javafx.png" />
-    <Content Include="public\img\watt-javafx.png" />
+    <Content Include="public\img\projects\timothycope.png" />
+    <Content Include="public\img\projects\watt-app.png" />
+    <Content Include="public\img\projects\watt-extension.png" />
+    <Content Include="public\img\projects\watt-ide-javafx.png" />
+    <Content Include="public\img\projects\watt-javafx.png" />
     <Content Include="views\about.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\admin.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\blog-post.ejs">
@@ -99,6 +111,9 @@
     <Content Include="views\error.ejs" />
     <Content Include="views\partials\aside\blog.ejs" />
     <Content Include="views\partials\footer\about.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\partials\footer\signin.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\footer\album.ejs">
@@ -114,6 +129,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\head\about.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\partials\head\admin.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\head\album.ejs" />
@@ -132,14 +150,19 @@
     <Content Include="views\partials\main\album.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\main\signin.ejs">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="data\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\img\" />
+    <Folder Include="public\img\projects\" />
     <Folder Include="public\js\" />
     <Folder Include="routes\" />
+    <Folder Include="routes\api\" />
     <Folder Include="views\" />
     <Folder Include="views\partials\" />
     <Folder Include="views\partials\head\" />

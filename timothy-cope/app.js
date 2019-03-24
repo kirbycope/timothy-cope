@@ -9,7 +9,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // Load the internal dependencies (.js files)
-var routes = require('./routes/index');
+var index = require('./routes/index');
+var admin = require('./routes/admin');
+var blogApi = require('./routes/api/blog');
+var blog = require('./routes/blog');
 
 // Create an Express application
 var app = express();
@@ -28,7 +31,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Setup web app routes (controllers)
-app.use('/', routes);
+app.use('/', index);
+app.use('/admin', admin);
+app.use('/blog', blog);
+app.use('/api/blog', blogApi);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

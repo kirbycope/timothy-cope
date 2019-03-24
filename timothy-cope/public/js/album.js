@@ -24,7 +24,7 @@ function populateProjects() {
                     cardImageTop.alt = "Screenshot of " + projects[i].title;
                     cardImageTop.classList.add("card-img-top");
                     cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
-                    cardImageTop.setAttribute("src", "/public/img/" + projects[i].thumbnail);
+                    cardImageTop.setAttribute("src", "/public/img/projects/" + projects[i].thumbnail);
                     cardImageLink.appendChild(cardImageTop);
 
                 // <div class="card-body">

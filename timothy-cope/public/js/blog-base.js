@@ -1,4 +1,4 @@
-function AddBlogPostToContainer(containerId, post, includeContinue) {
+function addBlogPostToContainer(containerId, post, includeContinue) {
     // <div class="col-md-6">
     var cardContainer = document.createElement("div");
     cardContainer.classList.add("blog-post");

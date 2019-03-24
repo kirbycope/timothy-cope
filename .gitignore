@@ -422,4 +422,5 @@ ASALocalRun/
 .localhistory/
 
 # End of https://www.gitignore.io/api/node,visualstudio
-test-parser/config.json
+
+timothy-cope/config.json

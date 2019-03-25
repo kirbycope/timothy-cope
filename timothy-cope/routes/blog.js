@@ -10,7 +10,7 @@ router.get('/', function (req, res) {
         theme: process.env.THEME || 'default',
         flask_debug: process.env.FLASK_DEBUG || 'false',
         title: "Blog",
-        previewImg: "/public/img/preview-01.png"
+        previewImg: "/public/img/preview-blog.png"
     });
 });
 

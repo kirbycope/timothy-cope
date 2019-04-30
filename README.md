@@ -1,5 +1,5 @@
 # timothy-cope
-http://timothycope.us-east-1.elasticbeanstalk.com/
+http://timothycope.com/
 
 [View the Wiki](https://github.com/kirbycope/timothy-cope/wiki)
 

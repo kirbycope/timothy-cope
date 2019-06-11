@@ -72,6 +72,7 @@
     <Content Include="public\img\projects\connific.png" />
     <Content Include="public\img\dev.png" />
     <Content Include="public\img\projects\freerein.png" />
+    <Content Include="public\img\projects\iot-edge-raspberry-pi.png" />
     <Content Include="public\img\projects\java-appium.png" />
     <Content Include="public\img\projects\java-selenium.png" />
     <Content Include="public\img\projects\jira-app.png" />

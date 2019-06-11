@@ -1,8 +1,16 @@
 [
   {
+    "created": "Apr 2019",
+    "thumbnail": "iot-edge-raspberry-pi.png",
+    "title": "IoT Edge Raspberry Pi",
+    "url": "//github.com/kirbycope/iot-edge-raspberry-pi",
+    "text": "Host Docker images on ACR and deploy using IoT Hub.",
+    "small": "Azure"
+  },
+  {
     "created": "Mar 2019",
     "thumbnail": "rpi-gpio.png",
-    "title": "RPI-GPIO",
+    "title": "Raspberry Pi GPIO",
     "url": "//github.com/kirbycope/python-flask-rpgpio",
     "text": "API and Front-end for Raspberry Pi GPIO controls.",
     "small": "Python"

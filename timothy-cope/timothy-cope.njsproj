@@ -77,9 +77,13 @@
     <Content Include="public\img\projects\java-selenium.png" />
     <Content Include="public\img\projects\jira-app.png" />
     <Content Include="public\img\kelly-sikkema-450720-unsplash.jpg" />
+    <Content Include="public\img\projects\nunit-test-project.png" />
     <Content Include="public\img\projects\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\preview-blog.png" />
+    <Content Include="public\img\projects\react-native-tests.png" />
+    <Content Include="public\img\projects\rpi-gpio.png" />
+    <Content Include="public\img\projects\specflow-test-project.png" />
     <Content Include="public\img\qa.png" />
     <Content Include="public\img\projects\qAspire.png" />
     <Content Include="public\img\projects\restful.png" />

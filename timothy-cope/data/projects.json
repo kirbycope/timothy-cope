@@ -1,11 +1,43 @@
 [
   {
+    "created": "Oct 2019",
+    "thumbnail": "react-native-tests.png",
+    "title": "React Native BDD",
+    "url": "//github.com/kirbycope/react-native-tests",
+    "text": "Behaviour Driven Design using jest-cucumber and React Native.",
+    "small": "React Native"
+  },
+  {
+    "created": "Jun 2019",
+    "thumbnail": "specflow-test-project.png",
+    "title": "SpecFlow Example",
+    "url": "//github.com/kirbycope/specflow-test-project",
+    "text": "Examples for TechTalk Software AG's Cucumber for dotNet.",
+    "small": "C#, Cucumber"
+  },
+  {
+    "created": "Jun 2019",
+    "thumbnail": "nunit-test-project.png",
+    "title": "NUnit Example",
+    "url": "//github.com/kirbycope/nunit-test-project",
+    "text": "Examples for Charlie Poole and Rob Prouse's NUnit framework.",
+    "small": "C#, NUnit"
+  },
+  {
+    "created": "Jun 2019",
+    "thumbnail": "xunit-test-project.png",
+    "title": "xUnit Example",
+    "url": "//github.com/kirbycope/xunit-test-project",
+    "text": "Examples for the .Net Foundation's xUnit framework.",
+    "small": "C#, xUnit"
+  },
+  {
     "created": "Apr 2019",
     "thumbnail": "iot-edge-raspberry-pi.png",
     "title": "IoT Edge Raspberry Pi",
     "url": "//github.com/kirbycope/iot-edge-raspberry-pi",
     "text": "Host Docker images on ACR and deploy using IoT Hub.",
-    "small": "Azure"
+    "small": "Python, Azure"
   },
   {
     "created": "Mar 2019",
@@ -13,7 +45,7 @@
     "title": "Raspberry Pi GPIO",
     "url": "//github.com/kirbycope/python-flask-rpgpio",
     "text": "API and Front-end for Raspberry Pi GPIO controls.",
-    "small": "Python"
+    "small": "Python, RPi"
   },
   {
     "created": "Nov 2018",
@@ -21,7 +53,7 @@
     "title": "TestParser.com",
     "url": "//testparser.com/",
     "text": "A free, cloud-based test logging and parsing service.",
-    "small": "NodeJS"
+    "small": "Node, AWS"
   },
   {
     "created": "Apr 2018",
@@ -45,7 +77,7 @@
     "title": "SdetQa.com",
     "url": "//sdetqa.com",
     "text": "Offers free, online SDET and QA training materials and tools.",
-    "small": "NodeJS"
+    "small": "Node, AWS"
   },
   {
     "created": "Jul 2017",

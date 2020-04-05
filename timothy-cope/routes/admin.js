@@ -19,9 +19,19 @@ router.get('/signin', function (req, res) {
         static_path: 'public',
         theme: process.env.THEME || 'default',
         flask_debug: process.env.FLASK_DEBUG || 'false',
-        title: "Admin Sign In",
+        title: "Administrator Sign In",
         previewImg: "/public/img/preview-blog.png"
     });
+});
+
+// GET: "/admin/signout"
+router.get('/signout', function (req, res) {
+
+    // Response: (200 OK)
+    res.clearCookie('admin')
+        .redirect('/admin/signin')
+        .send();
+
 });
 
 // GET: "/admin/dashboard"
@@ -31,7 +41,7 @@ router.get('/dashboard', function (req, res) {
             static_path: 'public',
             theme: process.env.THEME || 'default',
             flask_debug: process.env.FLASK_DEBUG || 'false',
-            title: "Admin Dashboard",
+            title: "Administrator Dashboard",
             previewImg: "/public/img/preview-blog.png"
         });
     }

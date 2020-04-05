@@ -24,37 +24,44 @@ router.post("/login", function (req, res) {
             "email": credentials.email
         }
     };
-    // GET the Object from the DataBase
-    docClient.get(params, function (err, data) {
-        // If the DB request returned an error
-        if (err) {
-            // Return the error to the user
-            res.send(err);
-        }
-        else {
-            if (data.Item.password === credentials.password) {
-                // Response: (200 OK)
-                var oneHour = 3600000;
-                res.cookie('admin', data.Item.username, { maxAge: oneHour })
-                    .status(200)
-                    .send();
+    // HACK
+    if (credentials.email !== "Consulting@TimothyCope.com") {
+         // Response: (401 Unauthorized)
+        res.status(401).send();
+    }
+    else {
+        // GET the Object from the DataBase
+        docClient.get(params, function (err, data) {
+            // If the DB request returned an error
+            if (err) {
+                // Return the error to the user
+                res.send(err);
             }
             else {
-                // Response: (401 Unauthorized)
-                res.status(Unauthorized).send();
+                if (data.Item.password === credentials.password) {
+                    // Response: (200 OK)
+                    var oneHour = 3600000;
+                    res.cookie('admin', data.Item.username, { maxAge: oneHour })
+                        .status(200)
+                        .send();
+                }
+                else {
+                    // Response: (401 Unauthorized)
+                    res.status(401).send();
+                }
             }
-        }
-    });
+        });
+    }
 
 });
 
 // GET: "/api/admin/logout"
-router.post("/login", function (req, res) {
+router.post("/logout", function (req, res) {
 
     // Response: (200 OK)
-    res.clearCookie('admin');
-    res.status(200);
-    res.send();
+    res.clearCookie('admin')
+        .redirect('/admin/signin')
+        .send();
 
 });
 

@@ -120,7 +120,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\footer\dashboard.ejs" />
-    <Content Include="views\partials\header\dashboard.ejs" />
+    <Content Include="views\partials\header\admin.ejs" />
     <Content Include="views\partials\head\dashboard.ejs" />
     <Content Include="views\partials\main\dashboard.ejs">
       <SubType>Code</SubType>
@@ -132,7 +132,7 @@
     <Content Include="views\blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\album.ejs" />
+    <Content Include="views\blog.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\error.ejs" />
     <Content Include="views\partials\aside\blog.ejs" />

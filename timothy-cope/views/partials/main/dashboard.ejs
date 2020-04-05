@@ -1,24 +1,39 @@
 ﻿<div class="container-fluid">
-    <div class="row">
-        <!-- Side-Nav -->
-        <%- include ../../partials/aside/admin.ejs %>
-        <!-- Main Body -->
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Dashboard</h1>
-                <div class="btn-toolbar mb-2 mb-md-0">
-                    <div class="btn-group mr-2">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                    </div>
-                    <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                        <span data-feather="calendar"></span>
-                        This week
-                    </button>
+        <div class="row">
+            <!-- Side-Nav -->
+            <%- include ../../partials/aside/admin.ejs %>
+            <!-- Top Menu -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2"><%= title %></h1>
                 </div>
-            </div>
-            <h2>Section title</h2>
-
-        </main>
+                <!-- Main Section-->
+                <section>
+                    <h2>New Post</h2>
+                    <form>
+                        <div class="form-group text-left">
+                            <label for="category">Category</label>
+                            <input type="text" class="form-control" id="category" placeholder="qa" />
+                            <label for="date">Date</label>
+                            <input type="text" class="form-control" id="date" placeholder="Jan 01, 2020"/>
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="A short tagline"/>
+                            <label for="slug">Slug</label>
+                            <input type="text" class="form-control" id="slug" placeholder="a-short-tagline"/>
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Hello World!"/>
+                            <!-- QuillJs editor container -->
+                            <label for="editor">Content</label>
+                            <div id="editor">
+                                <p>Hello World!</p>
+                                <p>Some initial <strong>bold</strong> text</p>
+                                <p><br></p>
+                            </div>
+                            <br>
+                            <button id="savePost" type="button" class="btn btn-primary">🖫 Save</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
     </div>
-</div>

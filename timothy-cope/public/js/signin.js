@@ -1,11 +1,7 @@
-﻿var inputEmail = document.getElementById('inputEmail');
-var inputPassword = document.getElementById('inputPassword');
-var buttonSubmit = document.getElementById('buttonSubmit');
-
-/** POSTs the Login Form values to the authentication API. */
+﻿/** POSTs the Login Form values to the authentication API. */
 function postCredentials() {
-    var email = 'email=' + encodeURIComponent(inputEmail.value);
-    var password = '&password=' + encodeURIComponent(inputPassword.value);
+    var email = 'email=' + encodeURIComponent(document.getElementById('inputEmail').value);
+    var password = '&password=' + encodeURIComponent(document.getElementById('inputPassword').value);
     var xmlHttpRequest = new XMLHttpRequest();
     xmlHttpRequest.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -25,6 +21,7 @@ function postCredentials() {
 
 /** Sets the onclick event listener for the 'Submit' button. */
 function buttonSubmit_click() {
+    var buttonSubmit = document.getElementById('buttonSubmit');
     buttonSubmit.addEventListener('click', function () {
         buttonSubmit.disabled = true;
         postCredentials();

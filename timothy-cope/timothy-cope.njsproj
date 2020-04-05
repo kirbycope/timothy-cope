@@ -31,23 +31,36 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="public\css\dashboard.css">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\adminAside.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\js\blog-base.js" />
     <Compile Include="public\js\blog-post.js" />
     <Compile Include="public\js\blog.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="public\js\album.js" />
+    <Compile Include="public\js\dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\js\signin.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes\admin.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="routes\api\admin.js" />
     <Compile Include="routes\api\blog.js" />
     <Compile Include="routes\blog.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes\index.js" />
+    <Compile Include="views\partials\aside\admin.ejs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="views\partials\header\album.ejs" />
     <Content Include="config.json" />
     <Content Include="data\projects.json" />
@@ -106,13 +119,20 @@
     <Content Include="views\about.ejs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\admin.ejs">
+    <Content Include="views\partials\footer\dashboard.ejs" />
+    <Content Include="views\partials\header\dashboard.ejs" />
+    <Content Include="views\partials\head\dashboard.ejs" />
+    <Content Include="views\partials\main\dashboard.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\signin.ejs" />
+    <Content Include="views\dashboard.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\blog.ejs" />
+    <Content Include="views\album.ejs" />
     <Content Include="views\index.ejs" />
     <Content Include="views\error.ejs" />
     <Content Include="views\partials\aside\blog.ejs" />
@@ -137,14 +157,11 @@
     <Content Include="views\partials\head\about.ejs">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\partials\head\admin.ejs">
+    <Content Include="views\partials\head\signin.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\head\album.ejs" />
     <Content Include="views\partials\head\base.ejs" />
-    <Content Include="views\partials\header\blog.ejs">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="views\partials\head\blog.ejs" />
     <Content Include="views\partials\main\about.ejs">
       <SubType>Code</SubType>

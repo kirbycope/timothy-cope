@@ -3,7 +3,7 @@
 var express = require('express');
 var router = express.Router();
 
-// GET: "/" ("blog" page)
+// GET: "/blog"
 router.get('/', function (req, res) {
     res.render('blog', {
         static_path: 'public',
@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
     });
 });
 
-// GET: "/:slug" ("blog post" page)
+// GET: "/blog/slug"
 router.get('/:slug', function (req, res) {
     res.render('blog-post', {
         static_path: 'public',

@@ -7,7 +7,7 @@ function getRandomInt(min, max) {
 
 function populateFeaturedPosts() {
     // Pick two posts at random
-    var max = blogPosts.length -1;
+    var max = blogPosts.length - 1;
     var postOneIndex = getRandomInt(0, max);
     var postTwoIndex = getRandomInt(0, max);
     var featuredPosts = [];
@@ -20,81 +20,81 @@ function populateFeaturedPosts() {
         cardContainer.classList.add("col-md-6");
         document.getElementById("featured-posts").appendChild(cardContainer);
 
-            // <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            var projectCard = document.createElement("div");
-            projectCard.classList.add("row");
-            projectCard.classList.add("no-gutters");
-            projectCard.classList.add("border");
-            projectCard.classList.add("rounded");
-            projectCard.classList.add("overflow-hidden");
-            projectCard.classList.add("flex-md-row");
-            projectCard.classList.add("mb-4");
-            projectCard.classList.add("shadow-sm");
-            projectCard.classList.add("h-md-260");
-            projectCard.classList.add("position-relative");
-            cardContainer.appendChild(projectCard);
+        // <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        var projectCard = document.createElement("div");
+        projectCard.classList.add("row");
+        projectCard.classList.add("no-gutters");
+        projectCard.classList.add("border");
+        projectCard.classList.add("rounded");
+        projectCard.classList.add("overflow-hidden");
+        projectCard.classList.add("flex-md-row");
+        projectCard.classList.add("mb-4");
+        projectCard.classList.add("shadow-sm");
+        projectCard.classList.add("h-md-260");
+        projectCard.classList.add("position-relative");
+        cardContainer.appendChild(projectCard);
 
-                // <div class="col p-4 d-flex flex-column position-static">
-                var cardTop = document.createElement("div");
-                cardTop.classList.add("col");
-                cardTop.classList.add("p-4");
-                cardTop.classList.add("d-flex");
-                cardTop.classList.add("flex-column");
-                cardTop.classList.add("position-static");
-                projectCard.appendChild(cardTop);
+        // <div class="col p-4 d-flex flex-column position-static">
+        var cardTop = document.createElement("div");
+        cardTop.classList.add("col");
+        cardTop.classList.add("p-4");
+        cardTop.classList.add("d-flex");
+        cardTop.classList.add("flex-column");
+        cardTop.classList.add("position-static");
+        projectCard.appendChild(cardTop);
 
-                    // <strong class="d-inline-block mb-2 text-primary">Category</strong>
-                    var strong = document.createElement("strong");
-                    strong.classList.add("d-inline-block");
-                    strong.classList.add("mb-2");
-                    if (featuredPosts[i].category === "dev") {
-                        strong.classList.add("text-primary");
-                    }
-                    else {
-                        strong.classList.add("text-success");
-                    }
-                    strong.innerText = featuredPosts[i].category;
-                    cardTop.appendChild(strong);
+        // <strong class="d-inline-block mb-2 text-primary">Category</strong>
+        var strong = document.createElement("strong");
+        strong.classList.add("d-inline-block");
+        strong.classList.add("mb-2");
+        if (featuredPosts[i].category === "dev") {
+            strong.classList.add("text-primary");
+        }
+        else {
+            strong.classList.add("text-success");
+        }
+        strong.innerText = featuredPosts[i].category;
+        cardTop.appendChild(strong);
 
-                    // <h3 class="mb-0">Featured Title</h3>
-                    var title = document.createElement("h3");
-                    title.classList.add("mb-0");
-                    title.innerText = featuredPosts[i].title;
-                    cardTop.appendChild(title);
+        // <h3 class="mb-0">Featured Title</h3>
+        var title = document.createElement("h3");
+        title.classList.add("mb-0");
+        title.innerText = featuredPosts[i].title;
+        cardTop.appendChild(title);
 
-                    // <div class="mb-1 text-muted">Jan 01, 2019</div>
-                    var date = document.createElement("div");
-                    date.classList.add("mb-1");
-                    date.classList.add("text-muted");
-                    date.innerText = featuredPosts[i].date;
-                    cardTop.appendChild(date);
+        // <div class="mb-1 text-muted">Jan 01, 2019</div>
+        var date = document.createElement("div");
+        date.classList.add("mb-1");
+        date.classList.add("text-muted");
+        date.innerText = featuredPosts[i].date;
+        cardTop.appendChild(date);
 
-                    // <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    var description = document.createElement("p");
-                    description.classList.add("card-text");
-                    description.classList.add("mb-auto");
-                    description.innerText = featuredPosts[i].description;
-                    cardTop.appendChild(description);
+        // <p class="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        var description = document.createElement("p");
+        description.classList.add("card-text");
+        description.classList.add("mb-auto");
+        description.innerText = featuredPosts[i].description;
+        cardTop.appendChild(description);
 
-                    // <a href="#" class="stretched-link">Continue reading</a>
-                    var link = document.createElement("a");
-                    link.classList.add("stretched-link");
-                    link.innerText = "Continue reading";
-                    link.href = "blog/" + featuredPosts[i].slug;
-                    cardTop.appendChild(link);
+        // <a href="#" class="stretched-link">Continue reading</a>
+        var link = document.createElement("a");
+        link.classList.add("stretched-link");
+        link.innerText = "Continue reading";
+        link.href = "blog/" + featuredPosts[i].slug;
+        cardTop.appendChild(link);
 
-                // <div class="col-auto d-none d-lg-block">
-                var cardBottom = document.createElement("div");
-                cardBottom.classList.add("col-auto");
-                cardBottom.classList.add("d-none");
-                cardBottom.classList.add("d-lg-block");
-                projectCard.appendChild(cardBottom);
+        // <div class="col-auto d-none d-lg-block">
+        var cardBottom = document.createElement("div");
+        cardBottom.classList.add("col-auto");
+        cardBottom.classList.add("d-none");
+        cardBottom.classList.add("d-lg-block");
+        projectCard.appendChild(cardBottom);
 
-                    // <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                    var cardImage = document.createElement("img");
-                    cardImage.src = featuredPosts[i].thumbnail;
-                    cardImage.classList.add("bd-placeholder-img");
-                    cardBottom.appendChild(cardImage);
+        // <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        var cardImage = document.createElement("img");
+        cardImage.src = featuredPosts[i].thumbnail;
+        cardImage.classList.add("bd-placeholder-img");
+        cardBottom.appendChild(cardImage);
     }
 }
 

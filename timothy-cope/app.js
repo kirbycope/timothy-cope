@@ -10,6 +10,7 @@ var bodyParser = require('body-parser');
 
 // Load the internal dependencies (.js files)
 var index = require('./routes/index');
+var adminApi = require('./routes/api/admin');
 var admin = require('./routes/admin');
 var blogApi = require('./routes/api/blog');
 var blog = require('./routes/blog');
@@ -32,9 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Setup web app routes (controllers)
 app.use('/', index);
+app.use('/api/admin', adminApi);
 app.use('/admin', admin);
-app.use('/blog', blog);
 app.use('/api/blog', blogApi);
+app.use('/blog', blog);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

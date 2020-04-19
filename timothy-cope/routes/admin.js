@@ -50,5 +50,53 @@ router.get('/dashboard', function (req, res) {
     }
 });
 
+// GET: "/admin/newBlogPost"
+router.get('/newBlogPost', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('new-blog-post', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "New Blog Post",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
+// GET: "/admin/allBlogPosts"
+router.get('/allBlogPosts', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('all-blog-posts', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "All Blog Posts",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
+// GET: "/admin/blog/:slug"
+router.get('/blog/:slug', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('edit-blog-post', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "Edit Blog Post",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
 // Required (https://nodejs.org/api/modules.html#modules_module_exports)
 module.exports = router;

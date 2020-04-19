@@ -46,12 +46,12 @@ router.post("/", function (req, res) {
         // Define DB item
         var post = {
             slug: req.body.slug,
-            title: req.body.title,
             category: req.body.category,
-            date: req.date.configuration,
+            content: req.body.content,
+            date: req.body.date,
             description: req.body.description,
             thumbnail: req.body.thumbnail,
-            content: req.body.content
+            title: req.body.title
         };
         // DynamoDB Object
         var params = {
@@ -81,33 +81,25 @@ router.post("/", function (req, res) {
 // (R)ead a post
 // GET: "/api/blog/:slug"
 router.get("/:slug", function (req, res) {
-    // Check for 'admin' cookie
-    if (req.cookies.admin) {
-        // DynamoDB Object
-        var params = {
-            TableName: "blog",
-            Key: {
-                "slug": req.params.slug
-            }
-        };
-        // GET the Object from the DataBase
-        docClient.get(params, function (err, data) {
-            // If the DB request returned an error
-            if (err) {
-                // Return the error to the user
-                res.send(err);
-            }
-            else {
-                // Response: (200 OK) Send the data as the response body.
-                res.status(200).send(data.Item);
-            }
-        });
-    }
-    // The 'admin' cookie is not present
-    else {
-        // Return the error to the user
-        res.status(401).send();
-    }
+    // DynamoDB Object
+    var params = {
+        TableName: "blog",
+        Key: {
+            "slug": req.params.slug
+        }
+    };
+    // GET the Object from the DataBase
+    docClient.get(params, function (err, data) {
+        // If the DB request returned an error
+        if (err) {
+            // Return the error to the user
+            res.send(err);
+        }
+        else {
+            // Response: (200 OK) Send the data as the response body.
+            res.status(200).send(data.Item);
+        }
+    });
 });
 
 // (U)pdate a post

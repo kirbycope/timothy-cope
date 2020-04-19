@@ -116,10 +116,6 @@ function handlePagination() {
     }
 }
 
-function sortByDate(a, b) {
-    return new Date(a.date).getTime() - new Date(b.date).getTime();
-}
-
 var blogPosts;
 function getBlogPosts() {
     var querystringFilter = document.location.search;
@@ -146,4 +142,9 @@ function getBlogPosts() {
     xmlHttpRequest.send();
 }
 
-getBlogPosts();
+// Set the Event Handlers
+window.onload = function () {
+
+    getBlogPosts();
+
+};

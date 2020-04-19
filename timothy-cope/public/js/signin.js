@@ -5,8 +5,8 @@ function postCredentials() {
     var xmlHttpRequest = new XMLHttpRequest();
     xmlHttpRequest.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            var dashboardUrl = window.location.origin + "/admin/dashboard";
-            location.href = dashboardUrl;
+            var newUrl = window.location.origin + "/admin/dashboard";
+            location.href = newUrl;
         }
         else if (this.readyState === 4) {
             buttonSubmit.disabled = false;
@@ -32,5 +32,8 @@ function buttonSubmit_click() {
 
 // Set the Event Handlers
 window.onload = function () {
+
+    // Form submit override
     buttonSubmit_click();
+
 };

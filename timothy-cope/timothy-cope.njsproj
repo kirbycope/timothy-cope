@@ -6,6 +6,7 @@
     <Name>timothy-cope</Name>
     <RootNamespace>timothy-cope</RootNamespace>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -21,7 +22,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
     <NodejsPort>1337</NodejsPort>
-    <StartWebBrowser>true</StartWebBrowser>
+    <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,9 +35,11 @@
     <Compile Include="public\css\dashboard.css">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="public\js\adminAside.js">
+    <Compile Include="public\js\admin-aside.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\js\admin-blog-base.js" />
+    <Compile Include="public\js\all-blog-posts.js" />
     <Compile Include="public\js\blog-base.js" />
     <Compile Include="public\js\blog-post.js" />
     <Compile Include="public\js\blog.js">
@@ -46,6 +49,10 @@
     <Compile Include="public\js\dashboard.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\js\edit-blog-post.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\new-blog-post.js" />
     <Compile Include="public\js\signin.js">
       <SubType>Code</SubType>
     </Compile>
@@ -119,12 +126,29 @@
     <Content Include="views\about.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\all-blog-posts.ejs" />
+    <Content Include="views\edit-blog-post.ejs" />
+    <Content Include="views\new-blog-post.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\partials\footer\all-blog-posts.ejs" />
     <Content Include="views\partials\footer\dashboard.ejs" />
+    <Content Include="views\partials\footer\edit-blog-post.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\partials\footer\new-blog-post.ejs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\partials\header\admin.ejs" />
     <Content Include="views\partials\head\dashboard.ejs" />
+    <Content Include="views\partials\main\all-blog-posts.ejs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\partials\main\dashboard.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\main\edit-blog-post.ejs" />
+    <Content Include="views\partials\main\new-blog-post.ejs" />
     <Content Include="views\signin.ejs" />
     <Content Include="views\dashboard.ejs">
       <SubType>Code</SubType>

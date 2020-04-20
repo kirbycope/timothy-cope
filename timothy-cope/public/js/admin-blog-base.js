@@ -2,10 +2,9 @@ var changesSaved;
 
 function beforeUnload() {
     changesSaved = false;
-    // Warn user of untracked changes
     window.addEventListener('beforeunload', (event) => {
         //event.preventDefault();
-        if (unsavedChanges() === true) {
+        if (unsavedChanges()) {
             promptUnsavedChanges(event);
         }
         //event.returnValue = '';
@@ -17,6 +16,19 @@ function buttonSavePost_click() {
     buttonSavePost.addEventListener('click', function () {
         buttonSavePost.disabled = true;
         savePost();
+    });
+}
+
+function buttonViewThumbnail_click() {
+    var buttonViewThumbnail = document.getElementById('buttonViewThumbnail');
+    buttonViewThumbnail.addEventListener('click', function (e) {
+        var thumbnail = document.getElementById('thumbnail').value;
+        if (thumbnail.startsWith('/')) {
+            window.open(document.location.origin + thumbnail, '_blank');
+        }
+        else {
+            window.open(thumbnail, '_blank');
+        }
     });
 }
 
@@ -51,7 +63,7 @@ function savePost() {
         date: document.getElementById('date').value,
         description: document.getElementById('description').value,
         slug: document.getElementById('slug').value,
-        thumbnail: '/public/img/qa.png',
+        thumbnail: document.getElementById('thumbnail').value,
         title: document.getElementById('title').value
     };
     var xmlHttpRequest = new XMLHttpRequest();
@@ -61,7 +73,7 @@ function savePost() {
             var newUrl = window.location.origin + '/admin/allBlogPosts';
             location.href = newUrl;
         }
-        else if (this.readyState === 4) {
+        else if (this.readyState === 4 && this.status !== 200) {
             buttonSubmit.disabled = false;
         }
     };
@@ -71,21 +83,24 @@ function savePost() {
 }
 
 function unsavedChanges() {
-    if (changesSaved) {
-        return false;
-    }
-    if (document.querySelector('.ql-editor')) {
-        if (document.location.contains('new')) {
-            if (document.getElementById('category').value === '' &&
-                document.querySelector('.ql-editor').innerHTML === '' &&
-                document.getElementById('date').value === "" &&
-                document.getElementById('description').value === '' &&
-                document.getElementById('slug').value === '' &&
-                document.getElementById('title').value === ''
-            ) {
-                return false;
+    if (changesSaved !== true) {
+        if (document.querySelector('.ql-editor')) {
+            if (document.location.href.includes('new')) {
+                if (document.getElementById('category').value !== '' ||
+                    document.querySelector('.ql-editor').innerHTML !== '<p><br></p>' ||
+                    document.getElementById('date').value !== "" ||
+                    document.getElementById('description').value !== '' ||
+                    document.getElementById('slug').value !== '' ||
+                    document.getElementById('thumbnail').value !== '' ||
+                    document.getElementById('title').value !== ''
+                ) {
+                    return true;
+                }
+            }
+            else if (document.location.href.includes('/blog/')) {
+                return true;
             }
         }
     }
-    return true;
+    return false;
 }

@@ -11,6 +11,8 @@
     slug.value = blogPost.slug;
     var title = document.getElementById('title');
     title.value = blogPost.title;
+    var thumbnail = document.getElementById('thumbnail');
+    thumbnail.value = blogPost.thumbnail;
 }
 
 // Set the Event Handlers
@@ -24,5 +26,8 @@ window.onload = function () {
     
     // Form submit override
     buttonSavePost_click();
+
+    // Form view thumbnail override
+    buttonViewThumbnail_click();
 
 };

@@ -16,4 +16,7 @@ window.onload = function () {
     // Form submit override
     buttonSavePost_click();
 
+    // Form view thumbnail override
+    buttonViewThumbnail_click();
+
 };

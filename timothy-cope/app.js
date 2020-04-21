@@ -14,6 +14,7 @@ var adminApi = require('./routes/api/admin');
 var admin = require('./routes/admin');
 var blogApi = require('./routes/api/blog');
 var blog = require('./routes/blog');
+var reviews = require('./routes/reviews');
 
 // Create an Express application
 var app = express();
@@ -37,6 +38,7 @@ app.use('/api/admin', adminApi);
 app.use('/admin', admin);
 app.use('/api/blog', blogApi);
 app.use('/blog', blog);
+app.use('/reviews', reviews);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

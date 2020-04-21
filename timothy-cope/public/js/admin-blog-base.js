@@ -1,5 +1,11 @@
+/** A flag to indicate wheter the changes have been saved.
+ * If true, then the onunload event will not prompt when the user navigates away.
+ * */
 var changesSaved;
 
+//#region Event Listeners
+
+/** Sets the beforeunload event listener for window. */
 function beforeUnload() {
     changesSaved = false;
     window.addEventListener('beforeunload', (event) => {
@@ -11,6 +17,7 @@ function beforeUnload() {
     });
 }
 
+/** Sets the click event listener for the 'Save' button. */
 function buttonSavePost_click() {
     var buttonSavePost = document.getElementById('savePost');
     buttonSavePost.addEventListener('click', function () {
@@ -19,6 +26,7 @@ function buttonSavePost_click() {
     });
 }
 
+/** Sets the click event listener for the 'View' (thumbnail) button. */
 function buttonViewThumbnail_click() {
     var buttonViewThumbnail = document.getElementById('buttonViewThumbnail');
     buttonViewThumbnail.addEventListener('click', function (e) {
@@ -32,6 +40,12 @@ function buttonViewThumbnail_click() {
     });
 }
 
+//#endregion
+
+/**
+ * Deletes this post (where id="delete {slug}").
+ * @param {Event} e The event that called this function.
+ */
 function deletePost(e) {
     var slug = e.target.id.replace('delete ', '');
     var result = confirm('Delete post "' + slug + '"?');
@@ -48,6 +62,11 @@ function deletePost(e) {
     }
 }
 
+/**
+ * Prompts the user they will loose any unsaved changes.
+ * @param {Event} event The event that called this function.
+ * @returns {string} The confirmation message.
+ */
 function promptUnsavedChanges(event) {
     var confirmationMessage = 'It looks like you have been editing something. '
         + 'If you leave before saving, your changes will be lost.';
@@ -56,6 +75,7 @@ function promptUnsavedChanges(event) {
     return confirmationMessage;
 }
 
+/** POSTs the Blog Post form's values to the blog API. */
 function savePost() {
     var post = {
         category: document.getElementById('category').value,
@@ -82,6 +102,9 @@ function savePost() {
     xmlHttpRequest.send(JSON.stringify(post));
 }
 
+/** Checks for unsaved changes.
+ * @returns {boolean} Returns true if unsaved changes are noticed.
+ * */
 function unsavedChanges() {
     if (changesSaved !== true) {
         if (document.querySelector('.ql-editor')) {

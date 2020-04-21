@@ -1,4 +1,8 @@
-﻿function populateEditForm(blogPost) {
+﻿/**
+ * Populates the Edit form on the page.
+ * @param {Object} blogPost The blog post data.
+ */
+function populateEditForm(blogPost) {
     var editor = document.getElementById('editor');
     editor.innerHTML = blogPost.content;
     var category = document.getElementById('category');
@@ -15,19 +19,19 @@
     thumbnail.value = blogPost.thumbnail;
 }
 
-// Set the Event Handlers
+// After the window has loaded...
 window.onload = function () {
-    
+
     // Warn user of untracked changes
     beforeUnload();
 
-    // Get the post data
+    // Get the post data, then populate the page
     getBlogPost(populateEditForm);
-    
-    // Form submit override
+
+    // Set onclick for 'Save' button
     buttonSavePost_click();
 
-    // Form view thumbnail override
+    // Set onclick for 'View' (thumbnail) button
     buttonViewThumbnail_click();
 
 };

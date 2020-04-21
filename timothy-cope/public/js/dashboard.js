@@ -1,4 +1,4 @@
-﻿// Set the Event Handlers
+﻿// After the window has loaded...
 window.onload = function () {
 
     // <!-- Set the 'active' aside link -->

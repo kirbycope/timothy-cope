@@ -1,3 +1,9 @@
+/**
+ * Adds a blog post 'card' to the parent element.
+ * @param {string} containerId The parent element's id attribute.
+ * @param {Object} post The post data.
+ * @param {boolean} includeContinue Include the "Continue" link in the card. The default is false.
+ */
 function addBlogPostToContainer(containerId, post, includeContinue) {
     // <div class="col-md-6">
     var cardContainer = document.createElement("div");
@@ -49,6 +55,10 @@ function addBlogPostToContainer(containerId, post, includeContinue) {
     }
 }
 
+/**
+ * Gets all blog posts from the API (sorted by Date).
+ * @param {Function} callback The code to execute when the asynchronous operation completes.
+ */
 function getAllBlogPosts(callback) {
     var xmlHttpRequest = new XMLHttpRequest();
     xmlHttpRequest.onreadystatechange = function () {
@@ -65,6 +75,10 @@ function getAllBlogPosts(callback) {
     xmlHttpRequest.send();
 }
 
+/**
+ * Get a blog posts from the API (using location.pathname).
+ * @param {Function} callback The code to execute when the asynchronous operation completes.
+ */
 function getBlogPost(callback) {
     var pathname = document.location.pathname;
     var slug = pathname.substring(pathname.lastIndexOf("/") + 1, pathname.length);
@@ -89,6 +103,12 @@ function getBlogPost(callback) {
     xmlHttpRequest.send();
 }
 
+/**
+ * Helper function for date sorting.
+ * @param {Date} a The first date.
+ * @param {Date} b The second date.
+ * @returns {Date} (Date A - Date B).
+ */
 function sortByDate(a, b) {
     return new Date(a.date).getTime() - new Date(b.date).getTime();
 }

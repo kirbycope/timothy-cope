@@ -1,4 +1,4 @@
-﻿/** POSTs the Login Form values to the authentication API. */
+﻿/** POSTs the Login form's values to the authentication API. */
 function postCredentials() {
     var email = 'email=' + encodeURIComponent(document.getElementById('inputEmail').value);
     var password = '&password=' + encodeURIComponent(document.getElementById('inputPassword').value);
@@ -19,7 +19,7 @@ function postCredentials() {
 
 //#region Event Listeners
 
-/** Sets the onclick event listener for the 'Submit' button. */
+/** Sets the click event listener for the 'Submit' button. */
 function buttonSubmit_click() {
     var buttonSubmit = document.getElementById('buttonSubmit');
     buttonSubmit.addEventListener('click', function () {
@@ -30,10 +30,10 @@ function buttonSubmit_click() {
 
 //#endregion
 
-// Set the Event Handlers
+// After the window has loaded...
 window.onload = function () {
 
-    // Form submit override
+    // Set onclick for 'Submit' button
     buttonSubmit_click();
 
 };

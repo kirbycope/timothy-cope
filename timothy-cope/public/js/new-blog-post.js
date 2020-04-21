@@ -1,4 +1,4 @@
-// Set the Event Handlers
+// After the window has loaded...
 window.onload = function () {
 
     // Set the 'active' aside link
@@ -13,10 +13,10 @@ window.onload = function () {
         theme: 'snow'
     });
 
-    // Form submit override
+    // Set onclick for 'Save' button
     buttonSavePost_click();
 
-    // Form view thumbnail override
+    // Set onclick for 'View' (thumbnail) button
     buttonViewThumbnail_click();
 
 };

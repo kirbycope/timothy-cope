@@ -1,4 +1,7 @@
+/** List of the post(s) */
 var postList;
+
+/** ListJs options */
 var options = {
     valueNames: [
         'slug',
@@ -11,6 +14,10 @@ var options = {
     ]
 };
 
+/**
+ * Populates the blog post card(s).
+ * @param {Object} blogPosts The blog posts data.
+ */
 function populateBlogPosts(blogPosts) {
     var tbodyAllBlogPosts = document.getElementById('tbodyAllBlogPosts');
     for (var i = 0; i < blogPosts.length; i++) {
@@ -79,14 +86,14 @@ function populateBlogPosts(blogPosts) {
     postsList = new List('posts', options);
 }
 
-// Set the Event Handlers
+// After the window has loaded...
 window.onload = function () {
 
     // Set the 'active' aside link
     var asideAllBlogPostsLink = document.getElementById('asideAllBlogPostsLink');
     asideAllBlogPostsLink.classList.add('active');
 
-    // Get blog posts
+    // Get the blog post(s), then populate the page
     getAllBlogPosts(populateBlogPosts);
 
 };

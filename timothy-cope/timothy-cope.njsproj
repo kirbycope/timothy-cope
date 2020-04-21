@@ -53,6 +53,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="public\js\new-blog-post.js" />
+    <Compile Include="public\js\reviews.js" />
     <Compile Include="public\js\signin.js">
       <SubType>Code</SubType>
     </Compile>
@@ -65,6 +66,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\reviews.js" />
     <Compile Include="views\partials\aside\admin.ejs">
       <SubType>Code</SubType>
     </Compile>
@@ -83,6 +85,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\favicon.ico" />
+    <Content Include="public\img\joqbd.png" />
     <Content Include="public\img\projects\automater.png" />
     <Content Include="public\img\projects\c-sharp-appium.png" />
     <Content Include="public\img\projects\c-sharp-selenium.png" />
@@ -122,6 +125,7 @@
     <Content Include="public\img\projects\watt-extension.png" />
     <Content Include="public\img\projects\watt-ide-javafx.png" />
     <Content Include="public\img\projects\watt-javafx.png" />
+    <Content Include="public\img\towm.png" />
     <Content Include="views\about.ejs">
       <SubType>Code</SubType>
     </Content>
@@ -138,6 +142,7 @@
     <Content Include="views\partials\footer\new-blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\footer\reviews.ejs" />
     <Content Include="views\partials\form\blog-post.ejs" />
     <Content Include="views\partials\header\admin.ejs" />
     <Content Include="views\partials\head\blog-form.ejs">
@@ -152,6 +157,8 @@
     </Content>
     <Content Include="views\partials\main\edit-blog-post.ejs" />
     <Content Include="views\partials\main\new-blog-post.ejs" />
+    <Content Include="views\partials\main\reviews.ejs" />
+    <Content Include="views\reviews.ejs" />
     <Content Include="views\signin.ejs" />
     <Content Include="views\dashboard.ejs">
       <SubType>Code</SubType>

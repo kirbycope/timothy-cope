@@ -85,6 +85,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\favicon.ico" />
+    <Content Include="public\img\aost.png" />
     <Content Include="public\img\joqbd.png" />
     <Content Include="public\img\projects\automater.png" />
     <Content Include="public\img\projects\c-sharp-appium.png" />
@@ -118,6 +119,7 @@
     <Content Include="public\img\projects\testparser.png" />
     <Content Include="public\img\projects\the-cosmics.png" />
     <Content Include="public\img\projects\ti-calc.png" />
+    <Content Include="public\img\tcb.png" />
     <Content Include="public\img\timothy-cope-logo-98px.png" />
     <Content Include="public\img\timothy-cope.jpg" />
     <Content Include="public\img\projects\timothycope.png" />

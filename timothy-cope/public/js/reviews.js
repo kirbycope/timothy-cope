@@ -3,7 +3,7 @@ function populateReviews() {
     var reviews = {
         "books": [
             {
-                category: "Quality",
+                category: "qc",
                 copyright: "1992 by Juran Institute, Inc.",
                 review: "(3/5) The second half of this book covers how to plan and adapt QC in a production lifecycle.",
                 thumbnail: "/public/img/joqbd.png",
@@ -11,12 +11,28 @@ function populateReviews() {
                 url: "https://www.amazon.com/dp/0029166837"
             },
             {
-                category: "Quality",
+                category: "sqa",
+                copyright: "2011 Wiley Publishing",
+                review: "(4/5) Forms much of the foundation of the ISTQB certification.",
+                thumbnail: "/public/img/aost.png",
+                title: "Art of Software Testing",
+                url: "https://www.amazon.com/dp/B005PETXRM"
+            },
+            {
+                category: "qc",
                 copyright: "2013 The McGraw-Hill Companies, Inc.",
                 review: "(5/5) Learn what is means to be a good manager and to see problems in the production lifecycle.",
                 thumbnail: "/public/img/towm.png",
                 title: "Workplace Management",
-                url: "https://www.amazon.com/dp/0029166837"
+                url: "https://www.amazon.com/dp/0071808019"
+            },
+            {
+                category: "sqa",
+                copyright: "2017 Pragmatic Programmers, LLC.",
+                review: "(4/5) How I learned to stop fighting it and love BDD.",
+                thumbnail: "/public/img/tcb.png",
+                title: "The Cucumber Book",
+                url: "https://www.amazon.com/dp/B06XR5S98S"
             }
         ]
     };
@@ -40,7 +56,7 @@ function populateReviews() {
         // <strong class="d-inline-block mb-2 text-primary">Category</strong>
         var strong = document.createElement("strong");
         strong.classList.add("d-inline-block", "mb-2");
-        if (reviews["books"][i].category === "dev") {
+        if (reviews["books"][i].category === "sqa") {
             strong.classList.add("text-primary");
         }
         else {

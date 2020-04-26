@@ -1,5 +1,5 @@
 /** List of the post(s) */
-var postList;
+var postsList;
 
 /** ListJs options */
 var options = {
@@ -15,7 +15,7 @@ var options = {
 };
 
 /**
- * Populates the blog post card(s).
+ * Populates the blog post table.
  * @param {Object} blogPosts The blog posts data.
  */
 function populateBlogPosts(blogPosts) {

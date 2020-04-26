@@ -8,18 +8,17 @@ var AWS = require("aws-sdk");
 AWS.config.loadFromPath('./config.json');
 AWS.config.update({ endpoint: "https://dynamodb.us-east-1.amazonaws.com" });
 var docClient = new AWS.DynamoDB.DocumentClient();
-var tableName = "blog";
+var tableName = "reviews";
 
-// #region API - All Blog Posts
+//#region API - All Reviews
 
-// (R)ead all posts
-// GET: "/api/blog/"
+// (R)ead all reviews
+// GET: "/api/reviews/"
 router.get("/", function (req, res) {
     // DynamoDB Object
     var params = {
         TableName: tableName,
-        ProjectionExpression: "category, content, #d, description, slug, thumbnail, title",
-        ExpressionAttributeNames: { '#d': 'date' }
+        ProjectionExpression: "category, copyright, link, review, slug, thumbnail, title"
     };
     // GET the Object from the DataBase
     docClient.scan(params, function (err, data) {
@@ -35,12 +34,12 @@ router.get("/", function (req, res) {
     });
 });
 
-// #endregion
+//#endregion
 
 // #region API - Single Blog Post
 
-// (C)reate a post
-// POST: "/api/blog/"
+// (C)reate a review
+// POST: "/api/review/"
 router.post("/", function (req, res) {
     // Check for 'admin' cookie
     if (req.cookies.admin) {
@@ -48,9 +47,9 @@ router.post("/", function (req, res) {
         var item = {
             slug: req.body.slug,
             category: req.body.category,
-            content: req.body.content,
-            date: req.body.date,
-            description: req.body.description,
+            copyright: req.body.copyright,
+            link: req.body.link,
+            review: req.body.review,
             thumbnail: req.body.thumbnail,
             title: req.body.title
         };
@@ -79,8 +78,8 @@ router.post("/", function (req, res) {
     }
 });
 
-// (R)ead a post
-// GET: "/api/blog/:slug"
+// (R)ead a review
+// GET: "/api/review/:slug"
 router.get("/:slug", function (req, res) {
     // DynamoDB Object
     var params = {
@@ -103,11 +102,12 @@ router.get("/:slug", function (req, res) {
     });
 });
 
-// (U)pdate a post
+
+// (U)pdate a review
 // Right now the POST acutally does a PUT and inserts if new.
 
-// (D)elete a post
-// DELETE: "/api/blog/:slug"
+// (D)elete a review
+// DELETE: "/api/review/:slug"
 router.delete("/:slug", function (req, res) {
     // Check for 'admin' cookie
     if (req.cookies.admin) {
@@ -138,7 +138,7 @@ router.delete("/:slug", function (req, res) {
     }
 });
 
-// #endregion
+//#endregion
 
 // Required (https://nodejs.org/api/modules.html#modules_module_exports)
 module.exports = router;

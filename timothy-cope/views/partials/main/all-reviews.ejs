@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Side-Nav -->
+        <%- include ../../partials/aside/admin.ejs %>
+        <!-- Top Menu -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2"><%= title %></h1>
+            </div>
+            <!-- Main Section-->
+            <section>
+                <h2>All Reviews</h2>
+                <div id="reviews" class="table-responsive">
+                    <input id="inputFilter" type="text" class="search form-control" placeholder="Filter">
+                    <table class="table table-striped table-sm text-left">
+                        <thead>
+                            <tr>
+                                <th class="sort" data-sort="slug">Slug</th>
+                                <th class="sort" data-sort="category">Category</th>
+                                <th class="sort" data-sort="link">Link</th>
+                                <th class="sort" data-sort="review">Review</th>
+                                <th class="sort" data-sort="thumbnail">Thumbnail</th>
+                                <th class="sort" data-sort="title">Title</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyAllReviews" class="list"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

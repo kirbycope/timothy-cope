@@ -38,8 +38,11 @@
     <Compile Include="public\js\admin-aside.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\js\admin-base.js" />
     <Compile Include="public\js\admin-blog-base.js" />
+    <Compile Include="public\js\admin-review-base.js" />
     <Compile Include="public\js\all-blog-posts.js" />
+    <Compile Include="public\js\all-reviews.js" />
     <Compile Include="public\js\blog-base.js" />
     <Compile Include="public\js\blog-post.js" />
     <Compile Include="public\js\blog.js">
@@ -52,7 +55,10 @@
     <Compile Include="public\js\edit-blog-post.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\js\edit-review.js" />
     <Compile Include="public\js\new-blog-post.js" />
+    <Compile Include="public\js\new-review.js" />
+    <Compile Include="public\js\reviews-base.js" />
     <Compile Include="public\js\reviews.js" />
     <Compile Include="public\js\signin.js">
       <SubType>Code</SubType>
@@ -62,6 +68,7 @@
     </Compile>
     <Compile Include="routes\api\admin.js" />
     <Compile Include="routes\api\blog.js" />
+    <Compile Include="routes\api\reviews.js" />
     <Compile Include="routes\blog.js">
       <SubType>Code</SubType>
     </Compile>
@@ -132,33 +139,44 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\all-blog-posts.ejs" />
+    <Content Include="views\all-reviews.ejs" />
     <Content Include="views\edit-blog-post.ejs" />
+    <Content Include="views\edit-review.ejs" />
     <Content Include="views\new-blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\new-review.ejs" />
     <Content Include="views\partials\footer\all-blog-posts.ejs" />
+    <Content Include="views\partials\footer\all-reviews.ejs" />
     <Content Include="views\partials\footer\dashboard.ejs" />
     <Content Include="views\partials\footer\edit-blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\footer\edit-review.ejs" />
     <Content Include="views\partials\footer\new-blog-post.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\footer\new-review.ejs" />
     <Content Include="views\partials\footer\reviews.ejs" />
     <Content Include="views\partials\form\blog-post.ejs" />
+    <Content Include="views\partials\form\review.ejs" />
     <Content Include="views\partials\header\admin.ejs" />
     <Content Include="views\partials\head\blog-form.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\head\dashboard.ejs" />
+    <Content Include="views\partials\head\review-form.ejs" />
     <Content Include="views\partials\main\all-blog-posts.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\main\all-reviews.ejs" />
     <Content Include="views\partials\main\dashboard.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\main\edit-blog-post.ejs" />
+    <Content Include="views\partials\main\edit-review.ejs" />
     <Content Include="views\partials\main\new-blog-post.ejs" />
+    <Content Include="views\partials\main\new-review.ejs" />
     <Content Include="views\partials\main\reviews.ejs" />
     <Content Include="views\reviews.ejs" />
     <Content Include="views\signin.ejs" />

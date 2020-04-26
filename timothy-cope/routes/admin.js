@@ -98,5 +98,53 @@ router.get('/blog/:slug', function (req, res) {
     }
 });
 
+// GET: "/admin/newReview"
+router.get('/newReview', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('new-review', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "New Review",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
+// GET: "/admin/allReviews"
+router.get('/allReviews', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('all-reviews', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "All Reviews",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
+// GET: "/admin/reviews/:slug"
+router.get('/reviews/:slug', function (req, res) {
+    if (req.cookies.admin) {
+        res.render('edit-review', {
+            static_path: 'public',
+            theme: process.env.THEME || 'default',
+            flask_debug: process.env.FLASK_DEBUG || 'false',
+            title: "Edit Review",
+            previewImg: "/public/img/preview-blog.png"
+        });
+    }
+    else {
+        res.redirect('/admin/signin');
+    }
+});
+
 // Required (https://nodejs.org/api/modules.html#modules_module_exports)
 module.exports = router;

@@ -1,22 +1,22 @@
-﻿/**
+/**
  * Populates the Edit form on the page.
- * @param {Object} blogPost The blog post data.
+ * @param {Object} review The review data.
  */
-function populateEditForm(blogPost) {
+function populateEditForm(review) {
     var editor = document.getElementById('editor');
-    editor.innerHTML = blogPost.content;
+    editor.innerHTML = review.review;
     var category = document.getElementById('category');
-    category.value = blogPost.category;
-    var date = document.getElementById('date');
-    date.value = blogPost.date;
-    var description = document.getElementById('description');
-    description.value = blogPost.description;
+    category.value = review.category;
+    var copyright = document.getElementById('copyright');
+    copyright.value = review.copyright;
+    var link = document.getElementById('link');
+    link.value = review.link;
     var slug = document.getElementById('slug');
-    slug.value = blogPost.slug;
+    slug.value = review.slug;
     var thumbnail = document.getElementById('thumbnail');
-    thumbnail.value = blogPost.thumbnail;
+    thumbnail.value = review.thumbnail;
     var title = document.getElementById('title');
-    title.value = blogPost.title;
+    title.value = review.title;
 }
 
 // After the window has loaded...
@@ -26,10 +26,10 @@ window.onload = function () {
     beforeUnload();
 
     // Get the post data, then populate the page
-    getBlogPost(populateEditForm);
+    getReview(populateEditForm);
 
     // Set onclick for 'Save' button
-    buttonSavePost_click();
+    buttonSaveReview_click();
 
     // Set onclick for 'View' (thumbnail) button
     buttonViewThumbnail_click();

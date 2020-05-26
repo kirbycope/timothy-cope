@@ -92,8 +92,6 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\favicon.ico" />
-    <Content Include="public\img\aost.png" />
-    <Content Include="public\img\joqbd.png" />
     <Content Include="public\img\projects\automater.png" />
     <Content Include="public\img\projects\c-sharp-appium.png" />
     <Content Include="public\img\projects\c-sharp-selenium.png" />
@@ -127,7 +125,10 @@
     <Content Include="public\img\projects\testparser.png" />
     <Content Include="public\img\projects\the-cosmics.png" />
     <Content Include="public\img\projects\ti-calc.png" />
-    <Content Include="public\img\tcb.png" />
+    <Content Include="public\img\reviews\aost.png" />
+    <Content Include="public\img\reviews\joqbd.png" />
+    <Content Include="public\img\reviews\tcb.png" />
+    <Content Include="public\img\reviews\towm.png" />
     <Content Include="public\img\timothy-cope-logo-98px.png" />
     <Content Include="public\img\timothy-cope.jpg" />
     <Content Include="public\img\projects\timothycope.png" />
@@ -135,7 +136,6 @@
     <Content Include="public\img\projects\watt-extension.png" />
     <Content Include="public\img\projects\watt-ide-javafx.png" />
     <Content Include="public\img\projects\watt-javafx.png" />
-    <Content Include="public\img\towm.png" />
     <Content Include="views\about.ejs">
       <SubType>Code</SubType>
     </Content>
@@ -238,6 +238,7 @@
     <Folder Include="public\css\" />
     <Folder Include="public\img\" />
     <Folder Include="public\img\projects\" />
+    <Folder Include="public\img\reviews\" />
     <Folder Include="public\js\" />
     <Folder Include="routes\" />
     <Folder Include="routes\api\" />

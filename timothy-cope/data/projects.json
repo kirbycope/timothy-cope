@@ -1,5 +1,13 @@
 [
   {
+    "created": "May 2020",
+    "thumbnail": "powershell-toolbox.png",
+    "title": "PowerShell Toolbox",
+    "url": "//github.com/kirbycope/toolbox-powershell",
+    "text": "A collection of PowerShell scripts from over the years.",
+    "small": "PowerShell"
+  },
+  {
     "created": "Oct 2019",
     "thumbnail": "react-native-tests.png",
     "title": "React Native BDD",

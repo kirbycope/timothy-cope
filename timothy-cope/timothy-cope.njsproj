@@ -111,6 +111,7 @@
     <Content Include="public\img\projects\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\preview-blog.png" />
+    <Content Include="public\img\projects\powershell-toolbox.png" />
     <Content Include="public\img\projects\react-native-tests.png" />
     <Content Include="public\img\projects\rpi-gpio.png" />
     <Content Include="public\img\projects\specflow-test-project.png" />

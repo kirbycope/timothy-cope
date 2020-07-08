@@ -1,6 +1,14 @@
 [
   {
-    "created": "May 2020",
+    "created": "Jun 2020",
+    "thumbnail": "raspberry-pi-sense-hat-games.png",
+    "title": "Raspberry Pi Sense Hat Games",
+    "url": "//github.com/kirbycope/raspberry-pi-sense-hat-games",
+    "text": "Simple games made using the Sense HAT and its API.",
+    "small": "Python, RPi"
+  },
+  {
+    "created": "Apr 2020",
     "thumbnail": "powershell-toolbox.png",
     "title": "PowerShell Toolbox",
     "url": "//github.com/kirbycope/toolbox-powershell",

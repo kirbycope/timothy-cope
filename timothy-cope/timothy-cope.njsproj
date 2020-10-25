@@ -106,6 +106,7 @@
     <Content Include="public\img\projects\jira-app.png" />
     <Content Include="public\img\kelly-sikkema-450720-unsplash.jpg" />
     <Content Include="public\img\projects\nunit-test-project.png" />
+    <Content Include="public\img\projects\pembrook.png" />
     <Content Include="public\img\projects\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\preview-blog.png" />

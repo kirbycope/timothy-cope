@@ -1,5 +1,13 @@
 [
   {
+    "created": "Jan 2021",
+    "thumbnail": "soft-shutdown.png",
+    "title": "Soft Shutdown Script",
+    "url": "//github.com/kirbycope/soft-shutdown-script",
+    "text": "Safely Shutdown or reboot a RaspberryPi with the press of a button.",
+    "small": "Python, Rpi"
+  },
+  {
     "created": "Oct 2020",
     "thumbnail": "pembrook.png",
     "title": "Pembrook (Fallout 4 Mod)",

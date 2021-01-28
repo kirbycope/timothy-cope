@@ -113,6 +113,7 @@
     <Content Include="public\img\projects\powershell-toolbox.png" />
     <Content Include="public\img\projects\react-native-tests.png" />
     <Content Include="public\img\projects\rpi-gpio.png" />
+    <Content Include="public\img\projects\soft-shutdown.png" />
     <Content Include="public\img\projects\specflow-test-project.png" />
     <Content Include="public\img\projects\xunit-test-project.png" />
     <Content Include="public\img\qa.png" />

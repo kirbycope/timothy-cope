@@ -4,7 +4,7 @@
     "thumbnail": "soft-shutdown.png",
     "title": "Soft Shutdown Script",
     "url": "//github.com/kirbycope/soft-shutdown-script",
-    "text": "Safely Shutdown or reboot a RaspberryPi with the press of a button.",
+    "text": "Shutdown or reboot a RaspberryPi with the press of a button.",
     "small": "Python, Rpi"
   },
   {

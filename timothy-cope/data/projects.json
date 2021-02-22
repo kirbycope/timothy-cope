@@ -1,5 +1,13 @@
 [
   {
+    "created": "Feb 2021",
+    "thumbnail": "pico-display.png",
+    "title": "Pico Display Games",
+    "url": "//github.com/kirbycope/raspberry-pi-pico-display-games",
+    "text": "A small collection of games for the Pico Display Pack.",
+    "small": "Python, Pico"
+  },
+  {
     "created": "Jan 2021",
     "thumbnail": "soft-shutdown.png",
     "title": "Soft Shutdown Script",

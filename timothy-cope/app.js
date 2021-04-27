@@ -26,33 +26,111 @@ var tableName = "traffic";
 // Create an Express application
 var app = express();
 
+function dirtyWord(originalURL) {
+    if ((originalURL.indexOf('.anti-sec') >= 0)
+        || (originalURL.indexOf('.cgi') >= 0)
+        || (originalURL.indexOf('.env') >= 0)
+        || (originalURL.indexOf('.git') >= 0)
+        || (originalURL.indexOf('.html') >= 0)
+        || (originalURL.indexOf('.php') >= 0)
+        || (originalURL.indexOf('.tar.gz') >= 0)
+        || (originalURL.indexOf('.xgi') >= 0)
+        || (originalURL.indexOf('.zip') >= 0)
+        || (originalURL.indexOf('MyAdmin') >= 0)
+        || (originalURL.indexOf('phpMyAdmin') >= 0)
+        || (originalURL.indexOf('php-my-admin') >= 0)
+        || (originalURL.indexOf('phpmy-admin') >= 0)
+        || (originalURL.indexOf('phpmyadmin') >= 0)
+        || (originalURL.indexOf('phpstorm') >= 0)
+        || (originalURL.indexOf('phpunit') >= 0)
+        || (originalURL.indexOf('<php>') >= 0)
+        || (originalURL.indexOf('eval-stdin') >= 0)
+        || (originalURL.indexOf('xmrlpc') >= 0)
+        || (originalURL.indexOf('sql') >= 0)
+        || (originalURL.indexOf('sqlmanager') >= 0)
+        || (originalURL.indexOf('mysql') >= 0)
+        || (originalURL.indexOf('solr') >= 0)
+        || (originalURL.indexOf('dbadmin') >= 0)
+        || (originalURL.indexOf('wp-admin') >= 0)
+        || (originalURL.indexOf('wp-content') >= 0)
+        || (originalURL.indexOf('wp-config') >= 0)
+        || (originalURL.indexOf('wp-includes') >= 0)
+        || (originalURL.indexOf('wp-login') >= 0)
+        || (originalURL.indexOf('?a=') >= 0)
+        || (originalURL.indexOf('?author=') >= 0)
+        || (originalURL.indexOf('?cat=') >= 0)
+        || (originalURL.indexOf('?p=') >= 0)
+        || (originalURL.indexOf('jsonws') >= 0)
+        || (originalURL.indexOf('boaform') >= 0)
+        || (originalURL.indexOf('laravel') >= 0)
+        || (originalURL.indexOf('nginx_status') >= 0)
+        || (originalURL.indexOf('manager') >= 0)
+        || (originalURL.indexOf('Execute') >= 0)
+        || (originalURL.indexOf('execute') >= 0)
+        || (originalURL.indexOf('stalker_portal') >= 0)
+        || (originalURL.indexOf('client_area') >= 0)
+        || (originalURL.indexOf('PMA') >= 0)
+        || (originalURL.indexOf('pma') >= 0)
+        || (originalURL.indexOf('old') >= 0)
+        || (originalURL.indexOf('console') >= 0)
+        || (originalURL.indexOf('shell') >= 0)
+        || (originalURL.indexOf('jenkins') >= 0)
+        || (originalURL.indexOf('program') >= 0)
+        || (originalURL.indexOf('xxtest') >= 0)
+        || (originalURL.indexOf('editor') >= 0)
+        || (originalURL.indexOf('GponForm') >= 0)
+        || (originalURL.indexOf('app') >= 0)
+        || (originalURL.indexOf('portal') >= 0)
+        || (originalURL.indexOf('script') >= 0)
+        || (originalURL.indexOf('setup') >= 0)
+        || (originalURL.indexOf('ajax') >= 0)
+        || (originalURL.indexOf('function') >= 0)
+        || (originalURL.indexOf('cybersec') >= 0)
+        || (originalURL.indexOf('tmp') >= 0)
+        || (originalURL.indexOf('config') >= 0)
+        || (originalURL.indexOf('security') >= 0)
+    ) { return true; }
+    return false;
+}
+
 // Create log mechanism
 var logger = function (req, res, next) {
     var originalURL = req.originalUrl;
-    if (originalURL.indexOf('/public/') === -1) {
-        console.log(originalURL);
-        // Define DB item
-        var item = {
-            date: new Date().getTime(),
-            path: originalURL
-        };
-        // DynamoDB Object
-        var params = {
-            TableName: tableName,
-            Item: item
-        };
-        // POST the Object to the DataBase
-        docClient.put(params, function (err, data) {
-            // If the DB request returned an error
-            if (err) {
-                // Return the error to the user
-                console.log(err);
-                next();
-            }
-            else {
-                next();
-            }
-        });
+    // If the URL requested isn't a public resource file...
+    if ((originalURL.indexOf('/public/') === -1)
+        && (originalURL.indexOf('/favicon') === -1)
+        && (originalURL.indexOf('/robots') === -1)
+    )
+    {
+        // Stop attack vectors
+        if (dirtyWord(originalURL) === true) {
+            setTimeout(() => next(), 42069);
+        }
+        else {
+            console.log();
+            // Define DB item
+            var item = {
+                date: new Date().getTime(),
+                path: originalURL
+            };
+            // DynamoDB Object
+            var params = {
+                TableName: tableName,
+                Item: item
+            };
+            // POST the Object to the DataBase
+            docClient.put(params, function (err, data) {
+                // If the DB request returned an error
+                if (err) {
+                    // Return the error to the user
+                    console.log(err);
+                    next();
+                }
+                else {
+                    next();
+                }
+            });
+        }
     }
     else {
         next();

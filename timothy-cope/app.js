@@ -26,71 +26,80 @@ var tableName = "traffic";
 // Create an Express application
 var app = express();
 
+// Blacklist words
+var dirtyWords = [
+    '?a='
+    , '?author='
+    , '?cat='
+    , '?p='
+    , '.cgi'
+    , '.env'
+    , '.git'
+    , '.html'
+    , '.php'
+    , '.tar.gz'
+    , '.xgi'
+    , '.zip'
+    , '<php>'
+    , 'ajax'
+    , 'app'
+    , 'boaform'
+    , 'client_area'
+    , 'config'
+    , 'console'
+    , 'cybersec'
+    , 'dbadmin'
+    , 'editor'
+    , 'eval-stdin'
+    , 'Execute'
+    , 'execute'
+    , 'function'
+    , 'GponForm'
+    , 'jenkins'
+    , 'jsonws'
+    , 'laravel'
+    , 'manager'
+    , 'MyAdmin'
+    , 'mysql'
+    , 'nginx_status'
+    , 'old'
+    , 'php-my-admin'
+    , 'phpmy-admin'
+    , 'phpMyAdmin'
+    , 'phpmyadmin'
+    , 'phpstorm'
+    , 'phpunit'
+    , 'PMA'
+    , 'pma'
+    , 'portal'
+    , 'program'
+    , 'script'
+    , 'security'
+    , 'setup'
+    , 'shell'
+    , 'solr'
+    , 'sql'
+    , 'sqlmanager'
+    , 'stalker_portal'
+    , 'tmp'
+    , 'wp-admin'
+    , 'wp-config'
+    , 'wp-content'
+    , 'wp-includes'
+    , 'wp-login'
+    , 'xmrlpc'
+    , 'xxtest'
+];
+
+// Look for a "dirty" word in the Request URL
 function dirtyWord(originalURL) {
-    if ((originalURL.indexOf('.anti-sec') >= 0)
-        || (originalURL.indexOf('.cgi') >= 0)
-        || (originalURL.indexOf('.env') >= 0)
-        || (originalURL.indexOf('.git') >= 0)
-        || (originalURL.indexOf('.html') >= 0)
-        || (originalURL.indexOf('.php') >= 0)
-        || (originalURL.indexOf('.tar.gz') >= 0)
-        || (originalURL.indexOf('.xgi') >= 0)
-        || (originalURL.indexOf('.zip') >= 0)
-        || (originalURL.indexOf('MyAdmin') >= 0)
-        || (originalURL.indexOf('phpMyAdmin') >= 0)
-        || (originalURL.indexOf('php-my-admin') >= 0)
-        || (originalURL.indexOf('phpmy-admin') >= 0)
-        || (originalURL.indexOf('phpmyadmin') >= 0)
-        || (originalURL.indexOf('phpstorm') >= 0)
-        || (originalURL.indexOf('phpunit') >= 0)
-        || (originalURL.indexOf('<php>') >= 0)
-        || (originalURL.indexOf('eval-stdin') >= 0)
-        || (originalURL.indexOf('xmrlpc') >= 0)
-        || (originalURL.indexOf('sql') >= 0)
-        || (originalURL.indexOf('sqlmanager') >= 0)
-        || (originalURL.indexOf('mysql') >= 0)
-        || (originalURL.indexOf('solr') >= 0)
-        || (originalURL.indexOf('dbadmin') >= 0)
-        || (originalURL.indexOf('wp-admin') >= 0)
-        || (originalURL.indexOf('wp-content') >= 0)
-        || (originalURL.indexOf('wp-config') >= 0)
-        || (originalURL.indexOf('wp-includes') >= 0)
-        || (originalURL.indexOf('wp-login') >= 0)
-        || (originalURL.indexOf('?a=') >= 0)
-        || (originalURL.indexOf('?author=') >= 0)
-        || (originalURL.indexOf('?cat=') >= 0)
-        || (originalURL.indexOf('?p=') >= 0)
-        || (originalURL.indexOf('jsonws') >= 0)
-        || (originalURL.indexOf('boaform') >= 0)
-        || (originalURL.indexOf('laravel') >= 0)
-        || (originalURL.indexOf('nginx_status') >= 0)
-        || (originalURL.indexOf('manager') >= 0)
-        || (originalURL.indexOf('Execute') >= 0)
-        || (originalURL.indexOf('execute') >= 0)
-        || (originalURL.indexOf('stalker_portal') >= 0)
-        || (originalURL.indexOf('client_area') >= 0)
-        || (originalURL.indexOf('PMA') >= 0)
-        || (originalURL.indexOf('pma') >= 0)
-        || (originalURL.indexOf('old') >= 0)
-        || (originalURL.indexOf('console') >= 0)
-        || (originalURL.indexOf('shell') >= 0)
-        || (originalURL.indexOf('jenkins') >= 0)
-        || (originalURL.indexOf('program') >= 0)
-        || (originalURL.indexOf('xxtest') >= 0)
-        || (originalURL.indexOf('editor') >= 0)
-        || (originalURL.indexOf('GponForm') >= 0)
-        || (originalURL.indexOf('app') >= 0)
-        || (originalURL.indexOf('portal') >= 0)
-        || (originalURL.indexOf('script') >= 0)
-        || (originalURL.indexOf('setup') >= 0)
-        || (originalURL.indexOf('ajax') >= 0)
-        || (originalURL.indexOf('function') >= 0)
-        || (originalURL.indexOf('cybersec') >= 0)
-        || (originalURL.indexOf('tmp') >= 0)
-        || (originalURL.indexOf('config') >= 0)
-        || (originalURL.indexOf('security') >= 0)
-    ) { return true; }
-    return false;
+    var result = false;
+    for (var i = 0; i < dirtyWords.length; i++) {
+        if (originalURL.indexOf(dirtyWords[i]) >= 0) {
+            result = true;
+        }
+    }
+    return result;
 }
 
 // Create log mechanism
@@ -100,11 +109,12 @@ var logger = function (req, res, next) {
     if ((originalURL.indexOf('/public/') === -1)
         && (originalURL.indexOf('/favicon') === -1)
         && (originalURL.indexOf('/robots') === -1)
-    )
-    {
-        // Stop attack vectors
+        && (originalURL.indexOf('/humans') === -1)
+        && (originalURL.indexOf('/ads') === -1)
+    ) {
+        // Stop lazy attacks
         if (dirtyWord(originalURL) === true) {
-            setTimeout(() => next(), 42069);
+            setTimeout(() => next(), 31337);
         }
         else {
             console.log();

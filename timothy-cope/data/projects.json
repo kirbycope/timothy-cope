@@ -219,7 +219,7 @@
     "created": "Aug 2015",
     "thumbnail": "watt-extension.png",
     "title": "WATT Chrome Extension",
-    "url": "//chrome.google.com/webstore/detail/watt-web-automation-testi/nmcniejodogmpahanknhomgalncgcndb",
+    "url": "//github.com/kirbycope/watt-extension",
     "text": "Web Automation Testing Tool.",
     "small": "JavaScript"
   },

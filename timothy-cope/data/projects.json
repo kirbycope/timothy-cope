@@ -91,7 +91,7 @@
     "created": "Nov 2018",
     "thumbnail": "testparser.png",
     "title": "TestParser.com",
-    "url": "//testparser.com/",
+    "url": "//web.archive.org/web/20200209123504/http://testparser.com/",
     "text": "A free, cloud-based test logging and parsing service.",
     "small": "Node, AWS"
   },
@@ -115,7 +115,7 @@
     "created": "Feb 2018",
     "thumbnail": "sdetqa.png",
     "title": "SdetQa.com",
-    "url": "//sdetqa.com",
+    "url": "//web.archive.org/web/20200208234518/http://sdetqa.com/",
     "text": "Offers free, online SDET and QA training materials and tools.",
     "small": "Node, AWS"
   },

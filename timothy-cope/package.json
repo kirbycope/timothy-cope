@@ -10,13 +10,13 @@
     "name": ""
   },
   "dependencies": {
-    "aws-sdk": "^2.893.0",
+    "aws-sdk": "^2.1018.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
-    "debug": "^2.2.9",
+    "debug": "^2.6.9",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "serve-favicon": "^2.4.5"
+    "serve-favicon": "^2.5.0"
   }
 }

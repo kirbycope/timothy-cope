@@ -7,6 +7,8 @@
     <RootNamespace>timothy-cope</RootNamespace>
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <DebuggerPort>
+    </DebuggerPort>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -21,7 +23,7 @@
     <OutputPath>.</OutputPath>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <NodejsPort>1337</NodejsPort>
+    <NodejsPort>4444</NodejsPort>
     <StartWebBrowser>True</StartWebBrowser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -99,14 +101,19 @@
     <Content Include="public\img\projects\c-sharp-xamarin.png" />
     <Content Include="public\img\projects\connific.png" />
     <Content Include="public\img\dev.png" />
+    <Content Include="public\img\projects\cucumber-javascript.png" />
+    <Content Include="public\img\projects\cucumber-python.png" />
+    <Content Include="public\img\projects\cucumber-typescript.png" />
     <Content Include="public\img\projects\freerein.png" />
     <Content Include="public\img\projects\iot-edge-raspberry-pi.png" />
     <Content Include="public\img\projects\java-appium.png" />
     <Content Include="public\img\projects\java-selenium.png" />
     <Content Include="public\img\projects\jira-app.png" />
     <Content Include="public\img\kelly-sikkema-450720-unsplash.jpg" />
+    <Content Include="public\img\projects\mcje-pi.png" />
     <Content Include="public\img\projects\nunit-test-project.png" />
     <Content Include="public\img\projects\pembrook.png" />
+    <Content Include="public\img\projects\PiCasePrintings.png" />
     <Content Include="public\img\projects\powershell-api-tester.png" />
     <Content Include="public\img\preview-01.png" />
     <Content Include="public\img\preview-blog.png" />

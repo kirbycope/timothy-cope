@@ -1,5 +1,45 @@
 [
   {
+    "created": "Oct 2021",
+    "thumbnail": "cucumber-typescript.png",
+    "title": "Cucumber TypeScript",
+    "url": "//github.com/kirbycope/cucumber-typescript",
+    "text": "A simple WebDriverIO (Selenium) test framework.",
+    "small": "TypeScript"
+  },
+  {
+    "created": "Oct 2021",
+    "thumbnail": "cucumber-python.png",
+    "title": "Cucumber Python",
+    "url": "//github.com/kirbycope/cucumber-javascript",
+    "text": "A simple Appium and Selenium test framework.",
+    "small": "Python"
+  },
+  {
+    "created": "Oct 2021",
+    "thumbnail": "cucumber-javascript.png",
+    "title": "Cucumber JavaScript",
+    "url": "//github.com/kirbycope/cucumber-javascript",
+    "text": "A simple Appium and Selenium test framework.",
+    "small": "JavaScript"
+  },
+  {
+    "created": "Apr 2021",
+    "thumbnail": "mcje-pi.png",
+    "title": "Minecraft Java Edition Pi",
+    "url": "//github.com/kirbycope/PiCasePrintings",
+    "text": "Enhancements for Minecraft on Raspberry OS.",
+    "small": "Bash, RPi"
+  },
+  {
+    "created": "Mar 2021",
+    "thumbnail": "PiCasePrintings.png",
+    "title": "PiCasePrintings",
+    "url": "//github.com/kirbycope/PiCasePrintings",
+    "text": "A collection of scripts for cases sold (not by me) on Etsy.",
+    "small": "Bash, Python"
+  },
+  {
     "created": "Feb 2021",
     "thumbnail": "pico-display.png",
     "title": "Pico Display Games",

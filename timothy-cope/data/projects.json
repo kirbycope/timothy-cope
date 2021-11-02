@@ -2,7 +2,7 @@
   {
     "created": "Oct 2021",
     "thumbnail": "cucumber-csharp.png",
-    "title": "Cucumber TypeScript",
+    "title": "Cucumber C#",
     "url": "//github.com/kirbycope/cucumber-csharp",
     "text": "A simple Appium and Selenium test framework.",
     "small": "BDD, C#"

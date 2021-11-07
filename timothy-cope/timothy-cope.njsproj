@@ -94,6 +94,7 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="public\favicon.ico" />
+    <Content Include="public\img\projects\altunity-headspin-python.png" />
     <Content Include="public\img\projects\automater.png" />
     <Content Include="public\img\projects\c-sharp-appium.png" />
     <Content Include="public\img\projects\c-sharp-selenium.png" />

@@ -102,6 +102,7 @@
     <Content Include="public\img\projects\c-sharp-xamarin.png" />
     <Content Include="public\img\projects\connific.png" />
     <Content Include="public\img\dev.png" />
+    <Content Include="public\img\projects\cucumber-java.png" />
     <Content Include="public\img\projects\cucumber-javascript.png" />
     <Content Include="public\img\projects\cucumber-python.png" />
     <Content Include="public\img\projects\cucumber-typescript.png" />

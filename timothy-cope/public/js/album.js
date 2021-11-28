@@ -14,19 +14,30 @@ function populateProjects() {
         projectCard.classList.add("shadow-sm");
         cardContainer.appendChild(projectCard);
 
-        // <a>
-        var cardImageLink = document.createElement("a");
-        cardImageLink.title = "Link to site for " + projects[i].title;
-        cardImageLink.href = projects[i].url;
-        projectCard.appendChild(cardImageLink);
+        if (projects[i].embed) {
+            // <iframe class="card-img-top" frameborder="0" allowfullscreen="true">
+            var embedIframe = document.createElement("iframe");
+            embedIframe.classList.add("card-img-top");
+            embedIframe.setAttribute("src", "https://www.youtube.com/embed/" + projects[i].embed);
+            embedIframe.setAttribute("frameborder", "0");
+            embedIframe.setAttribute("allowfullscreen", true);
+            projectCard.appendChild(embedIframe);
+        }
+        else {
+            // <a>
+            var cardImageLink = document.createElement("a");
+            cardImageLink.title = "Link to site for " + projects[i].title;
+            cardImageLink.href = projects[i].url;
+            projectCard.appendChild(cardImageLink);
 
-        // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
-        var cardImageTop = document.createElement("img");
-        cardImageTop.alt = "Screenshot of " + projects[i].title;
-        cardImageTop.classList.add("card-img-top");
-        cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
-        cardImageTop.setAttribute("src", "/public/img/projects/" + projects[i].thumbnail);
-        cardImageLink.appendChild(cardImageTop);
+            // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
+            var cardImageTop = document.createElement("img");
+            cardImageTop.alt = "Screenshot of " + projects[i].title;
+            cardImageTop.classList.add("card-img-top");
+            cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
+            cardImageTop.setAttribute("src", "/public/img/projects/" + projects[i].thumbnail);
+            cardImageLink.appendChild(cardImageTop);
+        }
 
         // <div class="card-body">
         var cardBody = document.createElement("div");

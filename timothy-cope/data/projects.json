@@ -1,5 +1,13 @@
 [
   {
+    "created": "Dec 2021",
+    "thumbnail": "copecraft.png",
+    "title": "CopeCraft (Minecraft Mod)",
+    "url": "//github.com/kirbycope/CopeCraft",
+    "text": "A skyblock farming sim using a custom map and scripts.",
+    "small": "MCFunction"
+  },
+  {
     "created": "Nov 2021",
     "thumbnail": "altunity-headspin-python.png",
     "title": "AltUnity Headspin",

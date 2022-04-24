@@ -1,8 +1,16 @@
 [
   {
+    "created": "Feb 2022",
+    "thumbnail": "skyblock-bedrock.png",
+    "title": "SkyBlock Bedrock (Minecraft Mod)",
+    "url": "//github.com/kirbycope/SkyBlock",
+    "text": "Skyblock is one of the most popular survival gamemodes.",
+    "small": "MCAddon"
+  },
+  {
     "created": "Jan 2022",
     "thumbnail": "skyblock.png",
-    "title": "SkyBlock (Minecraft Mod)",
+    "title": "SkyBlock Java (Minecraft Mod)",
     "url": "//github.com/kirbycope/SkyBlock",
     "text": "Skyblock is one of the most popular survival gamemodes.",
     "small": "MCFunction"
@@ -14,14 +22,6 @@
     "url": "//github.com/kirbycope/CopeCraft",
     "text": "A skyblock farming sim using a custom map and scripts.",
     "small": "MCFunction"
-  },
-  {
-    "created": "Nov 2021",
-    "thumbnail": "altunity-headspin-python.png",
-    "title": "AltUnity Headspin",
-    "url": "//github.com/kirbycope/altunity-headspin-python",
-    "text": "Cucumber based AltUnity tests on Headspin devices.",
-    "small": "BDD, Python"
   },
   {
     "created": "Nov 2021",

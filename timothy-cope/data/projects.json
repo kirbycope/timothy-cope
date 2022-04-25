@@ -1,11 +1,27 @@
 [
   {
+    "created": "Mar 2022",
+    "thumbnail": "mob-spawner-bedrock.png",
+    "title": "Mob Spawner (Minecraft Mod)",
+    "url": "//github.com/kirbycope/mob-spawner-bedrock",
+    "text": "Create mob spawning towers by placing a custom block.",
+    "small": "MCAddon"
+  },
+  {
     "created": "Feb 2022",
     "thumbnail": "skyblock-bedrock.png",
     "title": "SkyBlock Bedrock (Minecraft Mod)",
-    "url": "//github.com/kirbycope/SkyBlock",
+    "url": "//github.com/kirbycope/SkyBlock-Bedrock",
     "text": "Skyblock is one of the most popular survival gamemodes.",
-    "small": "MCAddon"
+    "small": "MCTemplate"
+  },
+  {
+    "created": "Jan 2022",
+    "thumbnail": "bedrock-earth.png",
+    "title": "Bedrock Earth (Minecraft Mod)",
+    "url": "//github.com/kirbycope/Bedrock-Earth",
+    "text": "A couple mobs and a custom map inspired by Minecraft Earth.",
+    "small": "MCTemplate"
   },
   {
     "created": "Jan 2022",
@@ -337,7 +353,6 @@
   },
   {
     "created": "May 2014",
-    "embed": "y6-WzCYU3VY",
     "thumbnail": "timothycope.png",
     "title": "TimothyCope.com",
     "url": "//web.archive.org/web/20190119114647/http://timothycope.com/",
@@ -346,7 +361,6 @@
   },
   {
     "created": "Apr 2014",
-    "embed": "VnAOU3-GQ4w",
     "thumbnail": "restful.png",
     "title": "RESTful",
     "url": "//github.com/kirbycope/RESTful",
@@ -355,7 +369,6 @@
   },
   {
     "created": "Jan 2014",
-    "embed": "jHx9rhT2wJQ",
     "thumbnail": "the-cosmics.png",
     "title": "theCosmics",
     "url": "//github.com/kirbycope/the-cosmics",
@@ -364,7 +377,6 @@
   },
   {
     "created": "Nov 2013",
-    "embed": "hAnyQSxDSmE",
     "thumbnail": "telerik-rest.png",
     "title": "Telerik API Testing",
     "url": "//www.telerik.com/support/code-library/testing-rest-api-using-test-studio",
@@ -373,10 +385,9 @@
   },
   {
     "created": "Jun 2001",
-    "embed": "RA4oyt2QIRw",
     "thumbnail": "ti-calc.png",
     "title": "TiCalc.Org Apps",
-    "url": "//www.ticalc.org/archives/files/authors/52/5205.html",
+    "url": "//https://github.com/kirbycope/ti-calc",
     "text": "Shipped with the TI Connectivity Kit.",
     "small": "BASIC"
   }

@@ -18,6 +18,7 @@ var reviews = require('./routes/reviews');
 
 // Amazon Web Services config
 var AWS = require("aws-sdk");
+const { options } = require('./routes/index');
 AWS.config.loadFromPath('./config.json');
 AWS.config.update({ endpoint: "https://dynamodb.us-east-1.amazonaws.com" });
 var docClient = new AWS.DynamoDB.DocumentClient();
@@ -216,7 +217,7 @@ app.use(function (err, req, res, next) {
     });
 });
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);

@@ -59,7 +59,7 @@
     "created": "Oct 2021",
     "thumbnail": "cucumber-python.png",
     "title": "Cucumber Python",
-    "url": "//github.com/kirbycope/cucumber-javascript",
+    "url": "//github.com/kirbycope/cucumber-python",
     "text": "A simple AltUnity, Appium, and Selenium test framework.",
     "small": "BDD, Python"
   },
@@ -83,7 +83,7 @@
     "created": "Apr 2021",
     "thumbnail": "mcje-pi.png",
     "title": "Minecraft Java Edition Pi",
-    "url": "//github.com/kirbycope/PiCasePrintings",
+    "url": "//github.com/kirbycope/mcje-pi",
     "text": "Enhancements for Minecraft on Raspberry OS.",
     "small": "Bash, RPi"
   },
@@ -187,7 +187,7 @@
     "created": "Nov 2018",
     "thumbnail": "testparser.png",
     "title": "TestParser.com",
-    "url": "//web.archive.org/web/20200209123504/http://testparser.com/",
+    "url": "//github.com/kirbycope/test-parser",
     "text": "A free, cloud-based test logging and parsing service.",
     "small": "Node, AWS"
   },
@@ -211,7 +211,7 @@
     "created": "Feb 2018",
     "thumbnail": "sdetqa.png",
     "title": "SdetQa.com",
-    "url": "//web.archive.org/web/20200208234518/http://sdetqa.com/",
+    "url": "//github.com/kirbycope/sdetqa-com",
     "text": "Offers free, online SDET and QA training materials and tools.",
     "small": "Node, AWS"
   },
@@ -379,7 +379,7 @@
     "created": "Nov 2013",
     "thumbnail": "telerik-rest.png",
     "title": "Telerik API Testing",
-    "url": "//www.telerik.com/support/code-library/testing-rest-api-using-test-studio",
+    "url": "//github.com/kirbycope/telerik-rest",
     "text": "Testing REST API Using Test Studio.",
     "small": "C#, Telerik"
   },
@@ -387,7 +387,7 @@
     "created": "Jun 2001",
     "thumbnail": "ti-calc.png",
     "title": "TiCalc.Org Apps",
-    "url": "//https://github.com/kirbycope/ti-calc",
+    "url": "//github.com/kirbycope/ti-calc",
     "text": "Shipped with the TI Connectivity Kit.",
     "small": "BASIC"
   }

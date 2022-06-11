@@ -1,5 +1,13 @@
 [
   {
+    "created": "May 2022",
+    "thumbnail": "wom-java.png",
+    "title": "World of Minecraft (Java)",
+    "url": "//github.com/kirbycope/world-of-minecraft",
+    "text": "World of Warcraft but in Minecraft Java Edition.",
+    "small": "MCFunction"
+  },
+  {
     "created": "Mar 2022",
     "thumbnail": "mob-spawner-bedrock.png",
     "title": "Mob Spawner (Minecraft Mod)",

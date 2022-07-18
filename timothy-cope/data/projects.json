@@ -1,5 +1,13 @@
 [
   {
+    "created": "Jul 2022",
+    "thumbnail": "hearthstone-bedrock.png",
+    "title": "Hearthstone Bedrock (Minecraft Mod)",
+    "url": "//github.com/kirbycope/hearthstone-bedrock",
+    "text": "A Warcraft hearthstone for Minecraft Bedrock Edition.",
+    "small": "MCFunction"
+  },
+  {
     "created": "May 2022",
     "thumbnail": "wom-java.png",
     "title": "World of Minecraft (Minecraft Mod)",

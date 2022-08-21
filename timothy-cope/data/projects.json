@@ -1,5 +1,13 @@
 [
   {
+    "created": "Aug 2022",
+    "thumbnail": "little-buddy.png",
+    "title": "Little Buddy",
+    "url": "//github.com/kirbycope/little-buddy",
+    "text": "A little buddy to adventure with you in Minecraft Bedrock Edition.",
+    "small": "MCAddon"
+  },
+  {
     "created": "Jul 2022",
     "thumbnail": "hearthstone-bedrock.png",
     "title": "Hearthstone Bedrock",

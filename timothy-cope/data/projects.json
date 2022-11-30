@@ -1,10 +1,10 @@
 [
   {
     "created": "Nov 2022",
-    "thumbnail": "one-chunk.png",
-    "title": "One Chunk",
-    "url": "//github.com/kirbycope/one-chunk",
-    "text": "The world border is a 16x16 area and it expands each in-game day.",
+    "thumbnail": "expanding-world.png",
+    "title": "Expanding World",
+    "url": "//github.com/kirbycope/expanding-world",
+    "text": "The world border starts at 16x16 area and expands each in-game day.",
     "small": "MCFunction"
   },
   {

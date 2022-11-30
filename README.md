@@ -9,6 +9,7 @@ http://timothycope.com/
 1. Install VS Code
 1. Clone this repo
 1. Open `timothy-cope` folder from the cloned repo in VS Code
+1. Copy `config.json` into `/timothy-cope`
 1. In terminal run `cd ./timothy-cope`
 1. Run `npm install`
    - This installs dependencies defined in `[package.json](timothy-cope/package.json)`

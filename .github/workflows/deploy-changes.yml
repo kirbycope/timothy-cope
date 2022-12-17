@@ -29,9 +29,7 @@ jobs:
       - name: Zip contents
         run: |
           cd timothy-cope
-          pwd
-          ls
-          zip -r timothy-cope.zip timothy-cope
+          zip -r timothy-cope.zip ./*
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

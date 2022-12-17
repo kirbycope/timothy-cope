@@ -28,7 +28,7 @@ jobs:
           echo ${config} > timothy-cope/config.json
       - name: Zip contents
         run: |
-          (cd timothy-cope && zip -r timothy-cope.zip .)
+          (cd timothy-cope/timothy-cope && zip -r timothy-cope.zip .)
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

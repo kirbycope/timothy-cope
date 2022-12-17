@@ -42,5 +42,4 @@ jobs:
         run: |
           eb init ${ENVIRONMENT_NAME} --region ${AWS_REGION} --platform ${AWS_PLATFORM}
           echo 'deploy: artifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
-          uts= date +%s
-          eb deploy ${ENVIRONMENT_NAME} --label ${uts}
+          eb deploy ${ENVIRONMENT_NAME} --label `date +%s`

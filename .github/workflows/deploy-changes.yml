@@ -24,8 +24,8 @@ jobs:
       # Create config - Creates the ./timothy-cope/config.json file used to authenticate with AWS
       - name: Create config
         run: |
-          foo="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
-          echo ${foo} > timothy-cope/config.json
+          config="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
+          echo ${config} > timothy-cope/config.json
       # Zips the contents of ./timothy-cope
       - name: Zip contents
         run: |
@@ -36,7 +36,8 @@ jobs:
           pip install awsebcli --upgrade --user
           echo 'export PATH="~/.local/bin"' >> ~/.bash_profile && source ~/.bash_profile
           eb --version
-      # Use EB CLI
-      - name: Use EB
+      # Configure EB CLI
+      - name: Configure EB
         run: |
-          eb init TimothyCope.com --region ${AWS_REGION}  --platform ${AWS_PLATFORM}
+          eb init TimothyCope.com --region ${AWS_REGION} --platform ${AWS_PLATFORM}
+          eb status

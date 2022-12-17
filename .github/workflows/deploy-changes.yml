@@ -41,3 +41,4 @@ jobs:
         run: |
           eb init TimothyCope.com --region ${AWS_REGION} --platform ${AWS_PLATFORM}
           eb status
+          echo `cat .elasticbeanstalk/config.yml`

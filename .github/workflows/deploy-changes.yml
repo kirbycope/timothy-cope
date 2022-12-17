@@ -45,4 +45,4 @@ jobs:
       # Deploy TimothyCope.com
       - name: Deploy website
         run: |
-          eb deploy ${ENVIRONMENT_NAME} --label `date +%s`
+          eb deploy ${ENVIRONMENT_NAME} --label `date +%s` --staged

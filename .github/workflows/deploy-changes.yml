@@ -21,10 +21,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    # Foo - Creates a file
-    - name: Foo
+    # Create config - Creates the ./timothy-cope/config.json file used to authenticate with AWS
+    - name: Create config
       run: |
         foo="{ 'accessKeyId': ${accessKeyId}, 'secretAccessKey': ${secretAccessKey}, 'region': ${region} }"
-        echo ${foo}
-        echo $accessKeyId
-        touch config.json
+        echo ${foo} > timothy-cope/config.json
+    # Zips the contents of ./timothy-cope
+    - name: Zip contents
+      run: |
+        zip -r timothy-cope.zip /timothy-cope
+    # Install EB CLI
+    - name: Install EB
+    - run: |
+        git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
+        python ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
+        eb --version

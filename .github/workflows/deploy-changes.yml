@@ -42,6 +42,7 @@ jobs:
         run: |
           eb init ${ENVIRONMENT_NAME} --region ${AWS_REGION} --platform ${AWS_PLATFORM}
           echo '\ndeploy:\nartifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
+          eb status
       # Deploy TimothyCope.com
       - name: Deploy website
         run: |

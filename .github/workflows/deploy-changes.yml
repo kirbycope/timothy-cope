@@ -25,9 +25,6 @@ jobs:
         run: |
           creds="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
           echo ${creds} > config.json
-      - name: Zip contents
-        run: |
-          zip -r timothy-cope.zip .
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user
@@ -36,8 +33,6 @@ jobs:
       - name: Configure EB
         run: |
           eb init TimothyCope.com --region ${AWS_REGION} --platform ${AWS_PLATFORM}
-          echo '\ndeploy:\nartifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
-          eb status
-      - name: Deploy website
+      - name: Deploy EB
         run: |
           eb deploy TimothyCopeCom-env --label `date +%s`

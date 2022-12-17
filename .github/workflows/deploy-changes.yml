@@ -29,12 +29,12 @@ jobs:
       - name: Zip contents
         run: |
           zip -r timothy-cope.zip /timothy-cope
-      # Install Elastic Beanstalk CLI
+      # Install EB CLI
       - name: Install EB
-      - run: |
+        run: |
           git clone https://github.com/aws/aws-elastic-beanstalk-cli-setup.git
           python ./aws-elastic-beanstalk-cli-setup/scripts/ebcli_installer.py
-      # UseElastic Beanstalk CLI
+      # Use EB CLI
       - name: Use EB
-      - run: |
+        run: |
           eb --version

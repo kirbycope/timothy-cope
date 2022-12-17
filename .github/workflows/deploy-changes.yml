@@ -11,7 +11,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.secretAccessKey }}
   AWS_REGION: ${{ secrets.region }}
   AWS_PLATFORM: "Node.js"
-  ENVIRONMENT_NAME: "TimothyCope.com"
+  ENVIRONMENT_NAME: "TimothyCopeCom-env"
 
 permissions:
   contents: read

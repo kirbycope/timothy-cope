@@ -41,5 +41,8 @@ jobs:
       - name: Configure EB
         run: |
           eb init ${ENVIRONMENT_NAME} --region ${AWS_REGION} --platform ${AWS_PLATFORM}
-          echo 'deploy: artifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
+          echo '\ndeploy:\nartifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
+      # Deploy TimothyCope.com
+      - name: Deploy website
+        run: |
           eb deploy ${ENVIRONMENT_NAME} --label `date +%s`

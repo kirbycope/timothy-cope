@@ -7,8 +7,8 @@ on:
     branches: ["master"]
 
 env:
-  accessKeyId: ${{ secrets.accessKeyId }}
-  secretAccessKey: ${{ secrets.secretAccessKey }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.accessKeyId }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.secretAccessKey }}
   region: ${{ secrets.region }}
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
       # Create config - Creates the ./timothy-cope/config.json file used to authenticate with AWS
       - name: Create config
         run: |
-          foo="{ 'accessKeyId': ${accessKeyId}, 'secretAccessKey': ${secretAccessKey}, 'region': ${region} }"
+          foo="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${region} }"
           echo ${foo} > timothy-cope/config.json
       # Zips the contents of ./timothy-cope
       - name: Zip contents

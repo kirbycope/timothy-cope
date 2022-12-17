@@ -24,6 +24,7 @@ jobs:
     # Foo - Creates a file
     - name: Foo
       run: |
-        foo='{ "accessKeyId": ${accessKeyId}, "secretAccessKey": ${secretAccessKey}, "region": ${region} }'
+        foo="{ 'accessKeyId': ${accessKeyId}, 'secretAccessKey': ${secretAccessKey}, 'region': ${region} }"
         echo ${foo}
+        echo $accessKeyId
         touch config.json

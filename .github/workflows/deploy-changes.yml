@@ -40,4 +40,4 @@ jobs:
           eb status
       - name: Deploy website
         run: |
-          eb deploy TimothyCopeCom-env --label `date +%s` --staged
+          eb deploy TimothyCopeCom-env --label `date +%s`

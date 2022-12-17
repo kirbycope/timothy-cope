@@ -9,7 +9,7 @@ on:
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.accessKeyId }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.secretAccessKey }}
-  region: ${{ secrets.region }}
+  AWS_REGION: ${{ secrets.region }}
 
 permissions:
   contents: read
@@ -23,7 +23,7 @@ jobs:
       # Create config - Creates the ./timothy-cope/config.json file used to authenticate with AWS
       - name: Create config
         run: |
-          foo="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${region} }"
+          foo="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
           echo ${foo} > timothy-cope/config.json
       # Zips the contents of ./timothy-cope
       - name: Zip contents
@@ -34,8 +34,8 @@ jobs:
         run: |
           pip install awsebcli --upgrade --user
           echo 'export PATH="~/.local/bin"' >> ~/.bash_profile && source ~/.bash_profile
+          eb --version
       # Use EB CLI
       - name: Use EB
         run: |
-          eb --version
-          eb health
+          eb init TimothyCope.com --region ${AWS_REGION}

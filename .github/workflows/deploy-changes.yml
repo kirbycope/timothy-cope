@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ "master" ]
 
+env:
+  accessKeyId: ${{ secrets.accessKeyId }}
+  secretAccessKey: ${{ secrets.secretAccessKey }}
+  region: ${{ secrets.region }}
+
 permissions:
   contents: read
 
@@ -16,6 +21,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    # Foo - Creates a file
     - name: Foo
       run: |
-        echo Bar
+        foo='{ "accessKeyId": ${accessKeyId}, "secretAccessKey": ${secretAccessKey}, "region": ${region} }'
+        echo ${foo}
+        touch config.json

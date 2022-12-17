@@ -11,6 +11,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.secretAccessKey }}
   AWS_REGION: ${{ secrets.region }}
   AWS_PLATFORM: "Node.js"
+  ENVIRONMENT_NAME: "TimothyCope.com"
 
 permissions:
   contents: read
@@ -39,6 +40,7 @@ jobs:
       # Configure EB CLI
       - name: Configure EB
         run: |
-          eb init TimothyCope.com --region ${AWS_REGION} --platform ${AWS_PLATFORM}
-          eb status
-          echo `cat .elasticbeanstalk/config.yml`
+          eb init ${ENVIRONMENT_NAME} --region ${AWS_REGION} --platform ${AWS_PLATFORM}
+          echo 'deploy: artifact: timothy-cope.zip' >> .elasticbeanstalk/config.yml
+          uts= date +%s
+          eb deploy ${ENVIRONMENT_NAME} --label ${uts}

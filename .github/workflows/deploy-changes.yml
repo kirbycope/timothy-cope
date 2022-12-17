@@ -28,7 +28,7 @@ jobs:
       # Zips the contents of ./timothy-cope
       - name: Zip contents
         run: |
-          zip -r timothy-cope.zip /timothy-cope
+          zip -r timothy-cope.zip timothy-cope
       # Install EB CLI
       - name: Install EB
         run: |

@@ -25,8 +25,8 @@ jobs:
         run: |
           creds="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
           echo ${creds} > config.json
-          pwd
-          ls
+          git add --force config.json
+          git commit -m "Adding secrets"
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

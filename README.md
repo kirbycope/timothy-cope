@@ -1,5 +1,5 @@
 # timothy-cope
-http://timothycope.com/
+Source for http://timothycope.com/
 
 [View the Wiki](https://github.com/kirbycope/timothy-cope/wiki)
 

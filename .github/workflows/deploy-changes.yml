@@ -25,6 +25,8 @@ jobs:
         run: |
           creds="{ 'accessKeyId': ${AWS_ACCESS_KEY_ID}, 'secretAccessKey': ${AWS_SECRET_ACCESS_KEY}, 'region': ${AWS_REGION} }"
           echo ${creds} > config.json
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git add --force config.json
           git commit -m "Adding secrets"
       - name: Install EB

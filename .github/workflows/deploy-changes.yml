@@ -28,7 +28,7 @@ jobs:
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           git add --force config.json
-          git commit --file .git/COMMIT_EDITMSG
+          git commit --reuse-message=HEAD
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

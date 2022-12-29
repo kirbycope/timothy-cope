@@ -28,7 +28,7 @@ jobs:
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
           git add --force config.json
-          git commit -m "Adding secrets"
+          git commit --file .git/COMMIT_EDITMSG
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

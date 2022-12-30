@@ -426,3 +426,8 @@ ASALocalRun/
 timothy-cope/config.json
 timothy-cope/app.zip
 config.json
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

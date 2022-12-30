@@ -39,4 +39,4 @@ jobs:
           eb init TimothyCope.com --region ${AWS_REGION} --platform ${AWS_PLATFORM}
       - name: Deploy EB
         run: |
-          eb deploy TimothyCopeCom-env --label `date +%s`
+          eb deploy TimothyCopeCom-env-1 --label `date +%s`

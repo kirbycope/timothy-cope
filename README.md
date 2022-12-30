@@ -24,4 +24,4 @@ Source for http://timothycope.com/
 1. Deploy to `TimothyCope-env`
 
 ## Deploy (GitHub Action)
-Submit a change or PR to the `main` branch to [deploy](/.github/workflows/deploy-changes.yml).
+Submit a change or PR to the `main` branch to [deploy](/.github/workflows/deploy-changes.yml) using [actions](https://github.com/kirbycope/timothy-cope/actions).

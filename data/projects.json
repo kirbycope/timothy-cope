@@ -1,5 +1,13 @@
 [
   {
+    "created": "Jan 2023",
+    "thumbnail": "skyblock-four-sticks.png",
+    "title": "SkyBlock: Four Sticks",
+    "url": "//github.com/kirbycope/skyblock-four-sticks",
+    "text": "A multiplayer SkyBlock where each player gets an island.",
+    "small": "MCFunction"
+  },
+  {
     "created": "Nov 2022",
     "thumbnail": "expanding-world.png",
     "title": "Expanding World",

@@ -1,6 +1,30 @@
 [
   {
     "created": "Feb 2023",
+    "thumbnail": "item-rush-bedrock.png",
+    "title": "Item Rush (Bedrock)",
+    "url": "//github.com/kirbycope/item-rush-bedrock",
+    "text": "Item Rush game mode for Minecraft Bedrock Edition.",
+    "small": "MCTemplate"
+  },
+  {
+    "created": "Feb 2023",
+    "thumbnail": "item-rush-java.png",
+    "title": "Item Rush (Java)",
+    "url": "//github.com/kirbycope/item-rush-java",
+    "text": "Item Rush game mode for Minecraft Java Edition.",
+    "small": "MCFunction"
+  },
+  {
+    "created": "Feb 2023",
+    "thumbnail": "mysticar-bedrock.png",
+    "title": "Mysticar",
+    "url": "//github.com/kirbycope/mysticar-bedrock",
+    "text": "The Mysticat car for Minecraft Bedrock Edition.",
+    "small": "MCTemplate"
+  },
+  {
+    "created": "Feb 2023",
     "thumbnail": "build-below-bedrock.png",
     "title": "Build Below Bedrock",
     "url": "//github.com/kirbycope/build-below-bedrock",

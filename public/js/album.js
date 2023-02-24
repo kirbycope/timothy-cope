@@ -96,6 +96,9 @@ function populateProjects() {
             else if (projects[i].small.indexOf("WordPress") !== -1) {
                 cardImageOverlay.setAttribute("src", "/public/img/wordpress.png");
             }
+            else if (projects[i].small.indexOf("Unity") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/unity.png");
+            }
             cardImageLink.appendChild(cardImageOverlay);
         }
 

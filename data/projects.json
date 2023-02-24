@@ -1,6 +1,14 @@
 [
   {
     "created": "Feb 2023",
+    "thumbnail": "vseeface-minecraft.png",
+    "title": "VSeeFace Minecraft",
+    "url": "//github.com/kirbycope/vseeface-minecraft",
+    "text": "A motion capatured, Minecraft avatar for VSeeFace.",
+    "small": "Unity"
+  },
+  {
+    "created": "Feb 2023",
     "thumbnail": "item-rush-bedrock.png",
     "title": "Item Rush (Bedrock)",
     "url": "//github.com/kirbycope/item-rush-bedrock",
@@ -56,12 +64,12 @@
     "small": "MCFunction"
   },
   {
-  "created": "Oct 2022",
-  "thumbnail": "minecRAFT.png",
-  "title": "MinecRAFT",
-  "url": "//github.com/kirbycope/minecRAFT",
-  "text": "Raft throws you and your friends into an epic oceanic adventure!",
-  "small": "MCFunction"
+    "created": "Oct 2022",
+    "thumbnail": "minecRAFT.png",
+    "title": "MinecRAFT",
+    "url": "//github.com/kirbycope/minecRAFT",
+    "text": "Raft throws you and your friends into an epic oceanic adventure!",
+    "small": "MCFunction"
   },
   {
     "created": "Aug 2022",

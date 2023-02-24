@@ -1,6 +1,14 @@
 [
   {
     "created": "Feb 2023",
+    "thumbnail": "map-markers-java.png",
+    "title": "Map Markers [Java]",
+    "url": "//github.com/kirbycope/map-markers-java",
+    "text": "Use a Python script to create map art in Minecraft Java.",
+    "small": "MCFunction"
+  },
+  {
+    "created": "Feb 2023",
     "thumbnail": "vseeface-minecraft.png",
     "title": "VSeeFace Minecraft",
     "url": "//github.com/kirbycope/vseeface-minecraft",

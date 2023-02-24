@@ -10,7 +10,7 @@
   {
     "created": "Feb 2023",
     "thumbnail": "item-rush-bedrock.png",
-    "title": "Item Rush (Bedrock)",
+    "title": "Item Rush [Bedrock]",
     "url": "//github.com/kirbycope/item-rush-bedrock",
     "text": "Item Rush game mode for Minecraft Bedrock Edition.",
     "small": "MCTemplate"
@@ -18,18 +18,10 @@
   {
     "created": "Feb 2023",
     "thumbnail": "item-rush-java.png",
-    "title": "Item Rush (Java)",
+    "title": "Item Rush [Java]",
     "url": "//github.com/kirbycope/item-rush-java",
     "text": "Item Rush game mode for Minecraft Java Edition.",
     "small": "MCFunction"
-  },
-  {
-    "created": "Feb 2023",
-    "thumbnail": "mysticar-bedrock.png",
-    "title": "Mysticar",
-    "url": "//github.com/kirbycope/mysticar-bedrock",
-    "text": "The Mysticat car for Minecraft Bedrock Edition.",
-    "small": "MCTemplate"
   },
   {
     "created": "Feb 2023",
@@ -40,9 +32,17 @@
     "small": "MCFunction"
   },
   {
+    "created": "Feb 2023",
+    "thumbnail": "mysticar-bedrock.png",
+    "title": "Mysticar [Bedrock]",
+    "url": "//github.com/kirbycope/mysticar-bedrock",
+    "text": "The Mysticat car for Minecraft Bedrock Edition.",
+    "small": "MCTemplate"
+  },
+  {
     "created": "Jan 2023",
     "thumbnail": "mysticar-java.png",
-    "title": "Mysticar",
+    "title": "Mysticar [Java]",
     "url": "//github.com/kirbycope/mysticar-java",
     "text": "The Mysticat car for Minecraft Java Edition.",
     "small": "MCFunction"
@@ -104,14 +104,6 @@
     "small": "MCAddon"
   },
   {
-    "created": "Feb 2022",
-    "thumbnail": "skyblock-bedrock.png",
-    "title": "SkyBlock Bedrock",
-    "url": "//github.com/kirbycope/SkyBlock-Bedrock",
-    "text": "Skyblock is one of the most popular survival gamemodes.",
-    "small": "MCTemplate"
-  },
-  {
     "created": "Jan 2022",
     "thumbnail": "bedrock-earth.png",
     "title": "Bedrock Earth",
@@ -120,9 +112,17 @@
     "small": "MCTemplate"
   },
   {
+    "created": "Feb 2022",
+    "thumbnail": "skyblock-bedrock.png",
+    "title": "SkyBlock [Bedrock]",
+    "url": "//github.com/kirbycope/SkyBlock-Bedrock",
+    "text": "Skyblock is one of the most popular survival gamemodes.",
+    "small": "MCTemplate"
+  },
+  {
     "created": "Jan 2022",
     "thumbnail": "skyblock.png",
-    "title": "SkyBlock Java",
+    "title": "SkyBlock [Java]",
     "url": "//github.com/kirbycope/SkyBlock",
     "text": "Skyblock is one of the most popular survival gamemodes.",
     "small": "MCFunction"

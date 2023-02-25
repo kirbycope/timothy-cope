@@ -21,14 +21,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Write Config
-        run: |
-          creds='{ "accessKeyId": "'${AWS_ACCESS_KEY_ID}'", "secretAccessKey": "'${AWS_SECRET_ACCESS_KEY}'", "region": "'${AWS_REGION}'" }'
-          echo ${creds} > config.json
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git add --force config.json
-          git commit --reuse-message=HEAD
       - name: Install EB
         run: |
           pip install awsebcli --upgrade --user

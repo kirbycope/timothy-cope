@@ -9,7 +9,6 @@ Source for http://timothycope.com/
 1. Install VS Code
 1. Clone this repo
 1. Open root folder from the cloned repo in VS Code
-1. Copy `config.json` into the root directory
 1. Run `npm install`
    - This installs dependencies defined in `[package.json](package.json)`
 
@@ -24,4 +23,4 @@ Source for http://timothycope.com/
 1. Deploy to `TimothyCope-env`
 
 ## Deploy (GitHub Action)
-Submit a change or PR to the `main` branch to [deploy](/.github/workflows/deploy-changes.yml) using [actions](https://github.com/kirbycope/timothy-cope/actions).
+Push a change or submit a PR to the `main` branch to [deploy](/.github/workflows/deploy-changes.yml) using [actions](https://github.com/kirbycope/timothy-cope/actions).

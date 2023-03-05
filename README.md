@@ -9,6 +9,7 @@ Source for http://timothycope.com/
 1. Install VS Code
 1. Clone this repo
 1. Open root folder from the cloned repo in VS Code
+1. Copy `config.json` into the root directory
 1. Run `npm install`
    - This installs dependencies defined in `[package.json](package.json)`
 

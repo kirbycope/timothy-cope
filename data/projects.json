@@ -5,8 +5,7 @@
     "title": "Map Markers [Java]",
     "url": "//github.com/kirbycope/map-markers-java",
     "text": "Use a Python script to create map art in Minecraft Java.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Feb 2023",
@@ -14,8 +13,7 @@
     "title": "VSeeFace Minecraft",
     "url": "//github.com/kirbycope/vseeface-minecraft",
     "text": "A motion capatured, Minecraft avatar for VSeeFace.",
-    "small": "Unity",
-    "category": "game"
+    "small": "Unity"
   },
   {
     "created": "Feb 2023",
@@ -23,8 +21,7 @@
     "title": "Item Rush [Bedrock]",
     "url": "//github.com/kirbycope/item-rush-bedrock",
     "text": "Item Rush game mode for Minecraft Bedrock Edition.",
-    "small": "MCTemplate",
-    "category": "game"
+    "small": "MCTemplate"
   },
   {
     "created": "Feb 2023",
@@ -32,8 +29,7 @@
     "title": "Item Rush [Java]",
     "url": "//github.com/kirbycope/item-rush-java",
     "text": "Item Rush game mode for Minecraft Java Edition.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Feb 2023",
@@ -41,8 +37,7 @@
     "title": "Build Below Bedrock",
     "url": "//github.com/kirbycope/build-below-bedrock",
     "text": "Build in the void below the bedrock layer in Minecraft Java.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Feb 2023",
@@ -50,8 +45,7 @@
     "title": "Mysticar [Bedrock]",
     "url": "//github.com/kirbycope/mysticar-bedrock",
     "text": "The Mysticat car for Minecraft Bedrock Edition.",
-    "small": "MCTemplate",
-    "category": "game"
+    "small": "MCTemplate"
   },
   {
     "created": "Jan 2023",
@@ -59,8 +53,7 @@
     "title": "Mysticar [Java]",
     "url": "//github.com/kirbycope/mysticar-java",
     "text": "The Mysticat car for Minecraft Java Edition.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Jan 2023",
@@ -68,8 +61,7 @@
     "title": "SkyBlock: Four Sticks",
     "url": "//github.com/kirbycope/skyblock-four-sticks",
     "text": "A multiplayer SkyBlock where each player gets an island.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Nov 2022",
@@ -77,8 +69,7 @@
     "title": "Expanding World",
     "url": "//github.com/kirbycope/expanding-world",
     "text": "The world border starts at 16x16 area and expands each in-game day.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Oct 2022",
@@ -86,8 +77,7 @@
     "title": "MinecRAFT",
     "url": "//github.com/kirbycope/minecRAFT",
     "text": "Raft throws you and your friends into an epic oceanic adventure!",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Aug 2022",
@@ -95,8 +85,7 @@
     "title": "Little Buddy",
     "url": "//github.com/kirbycope/little-buddy",
     "text": "A little buddy to adventure with you in Minecraft Bedrock Edition.",
-    "small": "MCAddon",
-    "category": "game"
+    "small": "MCAddon"
   },
   {
     "created": "Jul 2022",
@@ -104,8 +93,7 @@
     "title": "Hearthstone Bedrock",
     "url": "//github.com/kirbycope/hearthstone-bedrock",
     "text": "A Warcraft hearthstone for Minecraft Bedrock Edition.",
-    "small": "MCAddon",
-    "category": "game"
+    "small": "MCAddon"
   },
   {
     "created": "May 2022",
@@ -113,8 +101,7 @@
     "title": "World of Minecraft",
     "url": "//github.com/kirbycope/world-of-minecraft",
     "text": "World of Warcraft but in Minecraft Java Edition.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Mar 2022",
@@ -122,8 +109,7 @@
     "title": "Mob Spawner Bedrock",
     "url": "//github.com/kirbycope/mob-spawner-bedrock",
     "text": "Create mob spawning towers by placing a custom block.",
-    "small": "MCAddon",
-    "category": "game"
+    "small": "MCAddon"
   },
   {
     "created": "Jan 2022",
@@ -131,8 +117,7 @@
     "title": "Bedrock Earth",
     "url": "//github.com/kirbycope/Bedrock-Earth",
     "text": "A couple mobs and a custom map inspired by Minecraft Earth.",
-    "small": "MCTemplate",
-    "category": "game"
+    "small": "MCTemplate"
   },
   {
     "created": "Feb 2022",
@@ -140,8 +125,7 @@
     "title": "SkyBlock [Bedrock]",
     "url": "//github.com/kirbycope/SkyBlock-Bedrock",
     "text": "Skyblock is one of the most popular survival gamemodes.",
-    "small": "MCTemplate",
-    "category": "game"
+    "small": "MCTemplate"
   },
   {
     "created": "Jan 2022",
@@ -149,8 +133,7 @@
     "title": "SkyBlock [Java]",
     "url": "//github.com/kirbycope/SkyBlock",
     "text": "Skyblock is one of the most popular survival gamemodes.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Dec 2021",
@@ -158,8 +141,7 @@
     "title": "CopeCraft",
     "url": "//github.com/kirbycope/CopeCraft",
     "text": "A skyblock farming sim using a custom map and scripts.",
-    "small": "MCFunction",
-    "category": "game"
+    "small": "MCFunction"
   },
   {
     "created": "Nov 2021",
@@ -167,8 +149,7 @@
     "title": "Cucumber Java",
     "url": "//github.com/kirbycope/cucumber-java",
     "text": "A simple AltUnity, Appium, and Selenium test framework.",
-    "small": "BDD, Java",
-    "category": "test"
+    "small": "BDD, Java"
   },
   {
     "created": "Oct 2021",
@@ -176,8 +157,7 @@
     "title": "Cucumber C-Sharp",
     "url": "//github.com/kirbycope/cucumber-csharp",
     "text": "A simple AltUnity, Appium, and Selenium test framework.",
-    "small": "BDD, C#",
-    "category": "test"
+    "small": "BDD, C#"
   },
   {
     "created": "Oct 2021",
@@ -185,8 +165,7 @@
     "title": "Cucumber Python",
     "url": "//github.com/kirbycope/cucumber-python",
     "text": "A simple AltUnity, Appium, and Selenium test framework.",
-    "small": "BDD, Python",
-    "category": "test"
+    "small": "BDD, Python"
   },
   {
     "created": "Oct 2021",
@@ -194,8 +173,7 @@
     "title": "Cucumber TypeScript",
     "url": "//github.com/kirbycope/cucumber-typescript",
     "text": "A simple Appium and Selenium test framework.",
-    "small": "BDD, TypeScript",
-    "category": "test"
+    "small": "BDD, TypeScript"
   },
   {
     "created": "Oct 2021",
@@ -203,8 +181,7 @@
     "title": "Cucumber JavaScript",
     "url": "//github.com/kirbycope/cucumber-javascript",
     "text": "A simple Appium and Selenium test framework.",
-    "small": "BDD, JavaScript",
-    "category": "test"
+    "small": "BDD, JavaScript"
   },
   {
     "created": "Apr 2021",
@@ -212,8 +189,7 @@
     "title": "Minecraft Java Edition Pi",
     "url": "//github.com/kirbycope/mcje-pi",
     "text": "Enhancements for Minecraft on Raspberry OS.",
-    "small": "RPI, Bash",
-    "category": "pi"
+    "small": "RPI, Bash"
   },
   {
     "created": "Mar 2021",
@@ -221,8 +197,7 @@
     "title": "PiCasePrintings",
     "url": "//github.com/kirbycope/PiCasePrintings",
     "text": "A collection of scripts for cases sold (not by me) on Etsy.",
-    "small": "RPi, Bash",
-    "category": "pi"
+    "small": "RPi, Bash"
   },
   {
     "created": "Feb 2021",
@@ -230,8 +205,7 @@
     "title": "Pico Display Games",
     "url": "//github.com/kirbycope/raspberry-pi-pico-display-games",
     "text": "A small collection of games for the Pico Display Pack.",
-    "small": "Pico, Python",
-    "category": "pi"
+    "small": "Pico, Python"
   },
   {
     "created": "Jan 2021",
@@ -239,8 +213,7 @@
     "title": "Soft Shutdown Script",
     "url": "//github.com/kirbycope/soft-shutdown-script",
     "text": "Shutdown or reboot a RaspberryPi with the press of a button.",
-    "small": "RPi, Python",
-    "category": "pi"
+    "small": "RPi, Python"
   },
   {
     "created": "Oct 2020",
@@ -248,8 +221,7 @@
     "title": "Pembrook",
     "url": "//www.nexusmods.com/fallout4/mods/48009",
     "text": "Changes the Coastal Cottage to a fully furnished house.",
-    "small": "Creation Kit",
-    "category": "game"
+    "small": "Creation Kit"
   },
   {
     "created": "Jun 2020",
@@ -257,8 +229,7 @@
     "title": "Raspberry Pi Sense Hat Games",
     "url": "//github.com/kirbycope/raspberry-pi-sense-hat-games",
     "text": "Simple games made using the Sense HAT and its API.",
-    "small": "RPi, Python",
-    "category": "pi"
+    "small": "RPi, Python"
   },
   {
     "created": "Apr 2020",
@@ -266,8 +237,7 @@
     "title": "PowerShell Toolbox",
     "url": "//github.com/kirbycope/toolbox-powershell",
     "text": "A collection of PowerShell scripts from over the years.",
-    "small": "PowerShell",
-    "category": "dev"
+    "small": "PowerShell"
   },
   {
     "created": "Oct 2019",
@@ -275,8 +245,7 @@
     "title": "React Native BDD",
     "url": "//github.com/kirbycope/react-native-tests",
     "text": "Behaviour Driven Design using jest-cucumber and React Native.",
-    "small": "React Native",
-    "category": "test"
+    "small": "React Native"
   },
   {
     "created": "Jun 2019",
@@ -284,8 +253,7 @@
     "title": "SpecFlow Example",
     "url": "//github.com/kirbycope/specflow-test-project",
     "text": "Examples for TechTalk Software AG's Cucumber for dotNet.",
-    "small": "Cucumber, C#",
-    "category": "test"
+    "small": "Cucumber, C#"
   },
   {
     "created": "Jun 2019",
@@ -293,8 +261,7 @@
     "title": "NUnit Example",
     "url": "//github.com/kirbycope/nunit-test-project",
     "text": "Examples for Charlie Poole and Rob Prouse's NUnit framework.",
-    "small": "NUnit, C#",
-    "category": "test"
+    "small": "NUnit, C#"
   },
   {
     "created": "Jun 2019",
@@ -302,8 +269,7 @@
     "title": "xUnit Example",
     "url": "//github.com/kirbycope/xunit-test-project",
     "text": "Examples for the .Net Foundation's xUnit framework.",
-    "small": "xUnit, C#",
-    "category": "test"
+    "small": "xUnit, C#"
   },
   {
     "created": "Apr 2019",
@@ -311,8 +277,7 @@
     "title": "IoT Edge Raspberry Pi",
     "url": "//github.com/kirbycope/iot-edge-raspberry-pi",
     "text": "Host Docker images on ACR and deploy using IoT Hub.",
-    "small": "Azure, Python",
-    "category": "pi"
+    "small": "Azure, Python"
   },
   {
     "created": "Mar 2019",
@@ -320,8 +285,7 @@
     "title": "Raspberry Pi GPIO",
     "url": "//github.com/kirbycope/python-flask-rpgpio",
     "text": "API and Front-end for Raspberry Pi GPIO controls.",
-    "small": "RPi, Python",
-    "category": "pi"
+    "small": "RPi, Python"
   },
   {
     "created": "Nov 2018",
@@ -329,8 +293,7 @@
     "title": "TestParser.com",
     "url": "//github.com/kirbycope/test-parser",
     "text": "A free, cloud-based test logging and parsing service.",
-    "small": "AWS, Node",
-    "category": "test"
+    "small": "AWS, Node"
   },
   {
     "created": "Apr 2018",
@@ -338,8 +301,7 @@
     "title": "Starz Lite",
     "url": "//bitbucket.org/timothy_cope/starz-lite",
     "text": "A lite version of Starz.com (no video playback).",
-    "small": "Angular",
-    "category": "dev"
+    "small": "Angular"
   },
   {
     "created": "Feb 2018",
@@ -347,8 +309,7 @@
     "title": "SdetQa Framework",
     "url": "//github.com/kirbycope/sdetqa-framework-c-sharp",
     "text": "An API, Mobile, & Web Automated Testing Framework.",
-    "small": "NUnit, C#",
-    "category": "test"
+    "small": "NUnit, C#"
   },
   {
     "created": "Feb 2018",
@@ -356,8 +317,7 @@
     "title": "SdetQa.com",
     "url": "//github.com/kirbycope/sdetqa-com",
     "text": "Offers free, online SDET and QA training materials and tools.",
-    "small": "AWS, Node",
-    "category": "test"
+    "small": "AWS, Node"
   },
   {
     "created": "Jul 2017",
@@ -365,8 +325,7 @@
     "title": "C# Appium",
     "url": "//github.com/kirbycope/c-sharp-appium",
     "text": "A test framework for Windows (works with Sauce Labs TestObject).",
-    "small": "Appium, C#",
-    "category": "test"
+    "small": "Appium, C#"
   },
   {
     "created": "Jun 2017",
@@ -374,8 +333,7 @@
     "title": "C# Xamarin (OSX)",
     "url": "//github.com/kirbycope/c-sharp-xamarin-osx",
     "text": "A C# Xamarin and NUnit3 Framework for Mac (works with Xamarin Test Cloud).",
-    "small": "Xamarin, C#",
-    "category": "test"
+    "small": "Xamarin, C#"
   },
   {
     "created": "May 2017",
@@ -383,8 +341,7 @@
     "title": "Java Appium",
     "url": "//github.com/kirbycope/java-appium",
     "text": "A test framework (works with Amazon Device Farm).",
-    "small": "Appium, Java",
-    "category": "test"
+    "small": "Appium, Java"
   },
   {
     "created": "Apr 2017",
@@ -392,8 +349,7 @@
     "title": "C# Xamarin (Windows)",
     "url": "//github.com/kirbycope/c-sharp-xamarin",
     "text": "A C# Xamarin and NUnit3 Framework for Windows (works with Xamarin Test Cloud).",
-    "small": "Xamarin, C#",
-    "category": "test"
+    "small": "Xamarin, C#"
   },
   {
     "created": "Feb 2017",
@@ -401,8 +357,7 @@
     "title": "WATT (IDE)",
     "url": "//github.com/kirbycope/watt-ide-javafx",
     "text": "Web Automation Testing Tool interactive development environment.",
-    "small": "FX, Java",
-    "category": "test"
+    "small": "FX, Java"
   },
   {
     "created": "Nov 2016",
@@ -410,8 +365,7 @@
     "title": "WATT Stand-alone",
     "url": "//github.com/kirbycope/watt-javafx",
     "text": "Web Automation Testing Tool.",
-    "small": "FX, Java",
-    "category": "test"
+    "small": "FX, Java"
   },
   {
     "created": "Aug 2016",
@@ -419,8 +373,7 @@
     "title": "Java Selenium",
     "url": "//github.com/kirbycope/java-selenium",
     "text": "A Java Selenium and JUnit4 Framework.",
-    "small": "Selenium, Java",
-    "category": "test"
+    "small": "Selenium, Java"
   },
   {
     "created": "Aug 2016",
@@ -428,8 +381,7 @@
     "title": "C# Selenium",
     "url": "//github.com/kirbycope/c-sharp-selenium",
     "text": "A C# Selenium and NUnit3 Framework.",
-    "small": "Selenium, C#",
-    "category": "test"
+    "small": "Selenium, C#"
   },
   {
     "created": "Jun 2016",
@@ -437,8 +389,7 @@
     "title": "PowerShell API Tester",
     "url": "//github.com/kirbycope/powershell-api-tester",
     "text": "Perform Automated API tests using PowerShell.",
-    "small": "PowerShell",
-    "category": "test"
+    "small": "PowerShell"
   },
   {
     "created": "Jun 2016",
@@ -446,8 +397,7 @@
     "title": "JIRA Chrome App",
     "url": "//github.com/kirbycope/jira-app",
     "text": "Use the JIRA API with Google Chrome Apps.",
-    "small": "JavaScript",
-    "category": "dev"
+    "small": "JavaScript"
   },
   {
     "created": "Apr 2016",
@@ -455,8 +405,7 @@
     "title": "Connific",
     "url": "//bitbucket.org/timothy_cope/connific-android",
     "text": "A social networking platform for Android.",
-    "small": "Android, Java",
-    "category": "dev"
+    "small": "Android, Java"
   },
   {
     "created": "Dec 2015",
@@ -464,8 +413,7 @@
     "title": "WATT Chrome App",
     "url": "//github.com/kirbycope/watt-app",
     "text": "Web Automation Testing Tool.",
-    "small": "JavaScript",
-    "category": "test"
+    "small": "JavaScript"
   },
   {
     "created": "Aug 2015",
@@ -473,8 +421,7 @@
     "title": "WATT Chrome Extension",
     "url": "//github.com/kirbycope/watt-extension",
     "text": "Web Automation Testing Tool.",
-    "small": "JavaScript",
-    "category": "test"
+    "small": "JavaScript"
   },
   {
     "created": "May 2015",
@@ -482,8 +429,7 @@
     "title": "qAspire",
     "url": "//github.com/kirbycope/qAspire",
     "text": "A Selenium IDE-like standalone tool.",
-    "small": "FX, Java",
-    "category": "tset"
+    "small": "FX, Java"
   },
   {
     "created": "Sep 2014",
@@ -491,8 +437,7 @@
     "title": "AutoMater",
     "url": "//github.com/kirbycope/automater",
     "text": "A Java app that performs quality checks.",
-    "small": "Swing, Java",
-    "category": "test"
+    "small": "Swing, Java"
   },
   {
     "created": "Jul 2014",
@@ -500,8 +445,7 @@
     "title": "FreeRein",
     "url": "//github.com/kirbycope/FreeRein",
     "text": "A choose your own adventure game.",
-    "small": "MVC, C#",
-    "category": "game"
+    "small": "MVC, C#"
   },
   {
     "created": "Jul 2014",
@@ -509,8 +453,7 @@
     "title": "Selenium Class Library",
     "url": "//github.com/kirbycope/SeleniumClassLibrary",
     "text": "An example of a basic selenium library.",
-    "small": "Selenium, C#",
-    "category": "test"
+    "small": "Selenium, C#"
   },
   {
     "created": "May 2014",
@@ -518,8 +461,7 @@
     "title": "TimothyCope.com",
     "url": "//web.archive.org/web/20190119114647/http://timothycope.com/",
     "text": "Quality Assurance Testing, Training, and Consulting Services.",
-    "small": "WordPress",
-    "category": "dev"
+    "small": "WordPress"
   },
   {
     "created": "Apr 2014",
@@ -527,8 +469,7 @@
     "title": "RESTful",
     "url": "//github.com/kirbycope/RESTful",
     "text": "A WPF test client for RESTful APIs.",
-    "small": "WPF, C#",
-    "category": "test"
+    "small": "WPF, C#"
   },
   {
     "created": "Jan 2014",
@@ -536,8 +477,7 @@
     "title": "theCosmics",
     "url": "//github.com/kirbycope/the-cosmics",
     "text": "An ASP.net MVC4 web application.",
-    "small": "MVC, C#",
-    "category": "dev"
+    "small": "MVC, C#"
   },
   {
     "created": "Nov 2013",
@@ -545,8 +485,7 @@
     "title": "Telerik API Testing",
     "url": "//github.com/kirbycope/telerik-rest",
     "text": "Testing REST API Using Test Studio.",
-    "small": "Telerik, C#",
-    "category": "test"
+    "small": "Telerik, C#"
   },
   {
     "created": "Jun 2001",
@@ -554,7 +493,6 @@
     "title": "TiCalc.Org Apps",
     "url": "//github.com/kirbycope/ti-calc",
     "text": "Shipped with the TI Connectivity Kit.",
-    "small": "TI-BASIC",
-    "category": "game"
+    "small": "TI-BASIC"
   }
 ]

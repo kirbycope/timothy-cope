@@ -5,8 +5,6 @@ function populateProjects() {
         // <div class="col-md-4">
         var cardContainer = document.createElement("div");
         cardContainer.classList.add("col-md-4");
-        cardContainer.classList.add("column");
-        cardContainer.classList.add(projects[i].category);
         document.getElementById("projects").appendChild(cardContainer);
 
         // <div class="card mb-4 shadow-sm">
@@ -16,82 +14,93 @@ function populateProjects() {
         projectCard.classList.add("shadow-sm");
         cardContainer.appendChild(projectCard);
 
-        // <div>
-        var imageWrapper = document.createElement("div");
-        imageWrapper.style.position = "relative";
-        projectCard.appendChild(imageWrapper);
+        if (projects[i].embed) {
+            // <iframe class="card-img-top" frameborder="0" allowfullscreen="true">
+            var embedIframe = document.createElement("iframe");
+            embedIframe.classList.add("card-img-top");
+            embedIframe.setAttribute("src", "https://www.youtube.com/embed/" + projects[i].embed);
+            embedIframe.setAttribute("frameborder", "0");
+            embedIframe.setAttribute("allowfullscreen", true);
+            projectCard.appendChild(embedIframe);
+        }
+        else {
+            // <div>
+            var imageWrapper = document.createElement("div");
+            imageWrapper.style.position = "relative";
+            projectCard.appendChild(imageWrapper);
 
-        // <a>
-        var cardImageLink = document.createElement("a");
-        cardImageLink.title = "Link to site for " + projects[i].title;
-        cardImageLink.href = projects[i].url;
-        imageWrapper.appendChild(cardImageLink);
+            // <a>
+            var cardImageLink = document.createElement("a");
+            cardImageLink.title = "Link to site for " + projects[i].title;
+            cardImageLink.href = projects[i].url;
+            imageWrapper.appendChild(cardImageLink);
 
-        // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
-        var cardImageTop = document.createElement("img");
-        cardImageTop.alt = "Screenshot of " + projects[i].title;
-        cardImageTop.classList.add("card-img-top");
-        cardImageTop.style.display = "block";
-        cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
-        cardImageTop.setAttribute("src", "/public/img/projects/" + projects[i].thumbnail);
-        cardImageLink.appendChild(cardImageTop);
+            // <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail">
+            var cardImageTop = document.createElement("img");
+            cardImageTop.alt = "Screenshot of " + projects[i].title;
+            cardImageTop.classList.add("card-img-top");
+            cardImageTop.style.display = "block";
+            cardImageTop.setAttribute("data-src", "holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail");
+            cardImageTop.setAttribute("src", "/public/img/projects/" + projects[i].thumbnail);
+            cardImageLink.appendChild(cardImageTop);
 
-        // <img> overlay
-        var cardImageOverlay = document.createElement("img");
-        cardImageOverlay.style.bottom = 0;
-        cardImageOverlay.style.right = 0;
-        cardImageOverlay.style.maxHeight = "64px";
-        cardImageOverlay.style.marginLeft = "64px";
-        cardImageOverlay.style.position = "absolute";
-        if (projects[i].small.indexOf("MCAddon") !== -1 || projects[i].small.indexOf("MCTemplate") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/minecraft_bedrock.png");
+            // <img> overlay
+            var cardImageOverlay = document.createElement("img");
+            cardImageOverlay.style.bottom = 0;
+            cardImageOverlay.style.right = 0;
+            cardImageOverlay.style.maxHeight = "64px";
+            cardImageOverlay.style.marginLeft = "64px";
+            cardImageOverlay.style.position = "absolute";
+            if (projects[i].small.indexOf("MCAddon") !== -1 || projects[i].small.indexOf("MCTemplate") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/minecraft_bedrock.png");
+            }
+            else if (projects[i].small.indexOf("MCFunction") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/minecraft_java.png");
+            }
+            else if (projects[i].small.indexOf("Angular") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/angular.png");
+            }
+            else if (projects[i].small.indexOf("Bash") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/bash.png");
+            }
+            else if (projects[i].small.indexOf("C#") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/csharp.png");
+            }
+            else if (projects[i].small.indexOf("Creation Kit") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/creation_kit_white.png");
+            }
+            else if (projects[i].small.indexOf("Java") !== -1 && projects[i].small.indexOf("JavaScript") == -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/java.png");
+            }
+            else if (projects[i].small.indexOf("JavaScript") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/javascript.png");
+            }
+            else if (projects[i].small.indexOf("Node") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/nodejs.png");
+            }
+            else if (projects[i].small.indexOf("PowerShell") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/powershell.png");
+            }
+            else if (projects[i].small.indexOf("Python") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/python.png");
+            }
+            else if (projects[i].small.indexOf("React") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/react.png");
+            }
+            else if (projects[i].small.indexOf("TI-BASIC") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/ti-basic.png");
+            }
+            else if (projects[i].small.indexOf("TypeScript") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/typescript.png");
+            }
+            else if (projects[i].small.indexOf("WordPress") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/wordpress.png");
+            }
+            else if (projects[i].small.indexOf("Unity") !== -1) {
+                cardImageOverlay.setAttribute("src", "/public/img/unity.png");
+            }
+            cardImageLink.appendChild(cardImageOverlay);
         }
-        else if (projects[i].small.indexOf("MCFunction") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/minecraft_java.png");
-        }
-        else if (projects[i].small.indexOf("Angular") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/angular.png");
-        }
-        else if (projects[i].small.indexOf("Bash") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/bash.png");
-        }
-        else if (projects[i].small.indexOf("C#") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/csharp.png");
-        }
-        else if (projects[i].small.indexOf("Creation Kit") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/creation_kit_white.png");
-        }
-        else if (projects[i].small.indexOf("Java") !== -1 && projects[i].small.indexOf("JavaScript") == -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/java.png");
-        }
-        else if (projects[i].small.indexOf("JavaScript") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/javascript.png");
-        }
-        else if (projects[i].small.indexOf("Node") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/nodejs.png");
-        }
-        else if (projects[i].small.indexOf("PowerShell") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/powershell.png");
-        }
-        else if (projects[i].small.indexOf("Python") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/python.png");
-        }
-        else if (projects[i].small.indexOf("React") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/react.png");
-        }
-        else if (projects[i].small.indexOf("TI-BASIC") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/ti-basic.png");
-        }
-        else if (projects[i].small.indexOf("TypeScript") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/typescript.png");
-        }
-        else if (projects[i].small.indexOf("WordPress") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/wordpress.png");
-        }
-        else if (projects[i].small.indexOf("Unity") !== -1) {
-            cardImageOverlay.setAttribute("src", "/public/img/unity.png");
-        }
-        cardImageLink.appendChild(cardImageOverlay);
 
         // <div class="card-body">
         var cardBody = document.createElement("div");
@@ -149,61 +158,10 @@ function populateProjects() {
     }
 }
 
-/** Execute the function and show all columns */
-function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-    for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-}
-
-/** Show filtered elements **/
-function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-        }
-    }
-}
-
-/** Hide elements that are not selected **/
-function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-    }
-    element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
-
 // After the window has loaded...
 window.onload = function () {
 
     // Populate the page
     populateProjects();
-
-    // https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
-    filterSelection("all");
 
 };
